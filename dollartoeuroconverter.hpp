@@ -3,7 +3,7 @@
 
 #include "converter.hpp"
 
-class dollarToEuroConverter : public converter
+class dollarToEuroConverter : public Converter
 {
   public:
     dollarToEuroConverter();
