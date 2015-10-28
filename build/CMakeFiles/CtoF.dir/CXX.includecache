@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CelsiusToFahrenheitConverter.cpp
+CelsiusToFahrenheitConverter.hpp
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CelsiusToFahrenheitConverter.hpp
+
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CelsiusToFahrenheitConverter.hpp
+string
+-
+iostream
+-
+TempConverter.hpp
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/TempConverter.hpp
+
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/TempConverter.hpp
+string
+-
+iostream
+-
+converter.hpp
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/converter.hpp
+
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/converter.hpp
+iostream
+-
+string
+-
+

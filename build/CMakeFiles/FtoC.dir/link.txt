@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/FtoC.dir/FahrenheitToCelsiusConverter.cpp.o CMakeFiles/FtoC.dir/converter.cpp.o CMakeFiles/FtoC.dir/temp_converter.cpp.o  -o FtoC -rdynamic 

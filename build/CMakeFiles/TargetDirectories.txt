@@ -1,0 +1,4 @@
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles/CtoF.dir
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles/DtoE.dir
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles/EtoD.dir
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles/FtoC.dir

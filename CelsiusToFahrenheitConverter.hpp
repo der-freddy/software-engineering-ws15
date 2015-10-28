@@ -2,7 +2,7 @@
 #define CtoF
 #include <string>
 #include <iostream>
-#include "converter.hpp"
+#include "TempConverter.hpp"
 
 class CelsiusToFahrenheit : public TempConverter
 {
