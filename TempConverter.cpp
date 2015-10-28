@@ -1,6 +1,8 @@
-#include temp_converter.hpp
+#include "TempConverter.hpp"
 
 TempConverter::TempConverter()
+{}
+TempConverter::~TempConverter()
 {}
 
 

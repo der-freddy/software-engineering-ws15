@@ -1,12 +1,12 @@
 #ifndef YENTOEUROCONVERTER_H
 #define YENTOEUROCONVERTER_H
 
-#include "converter.hpp"
+#include "CurrencyConverter.hpp"
 
-class dollarToEuroConverter : public Converter
+class YenToEuroConverter : public CurrencyConverter
 {
   public:
-    yenToEuroConverter();
+    YenToEuroConverter();
     double convert(double inDollars);
     std::string toString() const;
     void print() const;

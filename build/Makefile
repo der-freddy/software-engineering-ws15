@@ -99,63 +99,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named CtoF
+# Target rules for targets named test
 
 # Build rule for target.
-CtoF: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CtoF
-.PHONY : CtoF
+test: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test
+.PHONY : test
 
 # fast build rule for target.
-CtoF/fast:
-	$(MAKE) -f CMakeFiles/CtoF.dir/build.make CMakeFiles/CtoF.dir/build
-.PHONY : CtoF/fast
-
-#=============================================================================
-# Target rules for targets named DtoE
-
-# Build rule for target.
-DtoE: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DtoE
-.PHONY : DtoE
-
-# fast build rule for target.
-DtoE/fast:
-	$(MAKE) -f CMakeFiles/DtoE.dir/build.make CMakeFiles/DtoE.dir/build
-.PHONY : DtoE/fast
-
-#=============================================================================
-# Target rules for targets named EtoD
-
-# Build rule for target.
-EtoD: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 EtoD
-.PHONY : EtoD
-
-# fast build rule for target.
-EtoD/fast:
-	$(MAKE) -f CMakeFiles/EtoD.dir/build.make CMakeFiles/EtoD.dir/build
-.PHONY : EtoD/fast
-
-#=============================================================================
-# Target rules for targets named FtoC
-
-# Build rule for target.
-FtoC: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 FtoC
-.PHONY : FtoC
-
-# fast build rule for target.
-FtoC/fast:
-	$(MAKE) -f CMakeFiles/FtoC.dir/build.make CMakeFiles/FtoC.dir/build
-.PHONY : FtoC/fast
+test/fast:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+.PHONY : test/fast
 
 CelsiusToFahrenheitConverter.o: CelsiusToFahrenheitConverter.cpp.o
 .PHONY : CelsiusToFahrenheitConverter.o
 
 # target to build an object file
 CelsiusToFahrenheitConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/CtoF.dir/build.make CMakeFiles/CtoF.dir/CelsiusToFahrenheitConverter.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o
 .PHONY : CelsiusToFahrenheitConverter.cpp.o
 
 CelsiusToFahrenheitConverter.i: CelsiusToFahrenheitConverter.cpp.i
@@ -163,7 +124,7 @@ CelsiusToFahrenheitConverter.i: CelsiusToFahrenheitConverter.cpp.i
 
 # target to preprocess a source file
 CelsiusToFahrenheitConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/CtoF.dir/build.make CMakeFiles/CtoF.dir/CelsiusToFahrenheitConverter.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.i
 .PHONY : CelsiusToFahrenheitConverter.cpp.i
 
 CelsiusToFahrenheitConverter.s: CelsiusToFahrenheitConverter.cpp.s
@@ -171,15 +132,39 @@ CelsiusToFahrenheitConverter.s: CelsiusToFahrenheitConverter.cpp.s
 
 # target to generate assembly for a file
 CelsiusToFahrenheitConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/CtoF.dir/build.make CMakeFiles/CtoF.dir/CelsiusToFahrenheitConverter.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.s
 .PHONY : CelsiusToFahrenheitConverter.cpp.s
+
+CurrencyConverter.o: CurrencyConverter.cpp.o
+.PHONY : CurrencyConverter.o
+
+# target to build an object file
+CurrencyConverter.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CurrencyConverter.cpp.o
+.PHONY : CurrencyConverter.cpp.o
+
+CurrencyConverter.i: CurrencyConverter.cpp.i
+.PHONY : CurrencyConverter.i
+
+# target to preprocess a source file
+CurrencyConverter.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CurrencyConverter.cpp.i
+.PHONY : CurrencyConverter.cpp.i
+
+CurrencyConverter.s: CurrencyConverter.cpp.s
+.PHONY : CurrencyConverter.s
+
+# target to generate assembly for a file
+CurrencyConverter.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CurrencyConverter.cpp.s
+.PHONY : CurrencyConverter.cpp.s
 
 FahrenheitToCelsiusConverter.o: FahrenheitToCelsiusConverter.cpp.o
 .PHONY : FahrenheitToCelsiusConverter.o
 
 # target to build an object file
 FahrenheitToCelsiusConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/FtoC.dir/build.make CMakeFiles/FtoC.dir/FahrenheitToCelsiusConverter.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o
 .PHONY : FahrenheitToCelsiusConverter.cpp.o
 
 FahrenheitToCelsiusConverter.i: FahrenheitToCelsiusConverter.cpp.i
@@ -187,7 +172,7 @@ FahrenheitToCelsiusConverter.i: FahrenheitToCelsiusConverter.cpp.i
 
 # target to preprocess a source file
 FahrenheitToCelsiusConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/FtoC.dir/build.make CMakeFiles/FtoC.dir/FahrenheitToCelsiusConverter.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.i
 .PHONY : FahrenheitToCelsiusConverter.cpp.i
 
 FahrenheitToCelsiusConverter.s: FahrenheitToCelsiusConverter.cpp.s
@@ -195,15 +180,39 @@ FahrenheitToCelsiusConverter.s: FahrenheitToCelsiusConverter.cpp.s
 
 # target to generate assembly for a file
 FahrenheitToCelsiusConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/FtoC.dir/build.make CMakeFiles/FtoC.dir/FahrenheitToCelsiusConverter.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.s
 .PHONY : FahrenheitToCelsiusConverter.cpp.s
+
+TempConverter.o: TempConverter.cpp.o
+.PHONY : TempConverter.o
+
+# target to build an object file
+TempConverter.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/TempConverter.cpp.o
+.PHONY : TempConverter.cpp.o
+
+TempConverter.i: TempConverter.cpp.i
+.PHONY : TempConverter.i
+
+# target to preprocess a source file
+TempConverter.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/TempConverter.cpp.i
+.PHONY : TempConverter.cpp.i
+
+TempConverter.s: TempConverter.cpp.s
+.PHONY : TempConverter.s
+
+# target to generate assembly for a file
+TempConverter.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/TempConverter.cpp.s
+.PHONY : TempConverter.cpp.s
 
 YenToEuroConverter.o: YenToEuroConverter.cpp.o
 .PHONY : YenToEuroConverter.o
 
 # target to build an object file
 YenToEuroConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/EtoD.dir/build.make CMakeFiles/EtoD.dir/YenToEuroConverter.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/YenToEuroConverter.cpp.o
 .PHONY : YenToEuroConverter.cpp.o
 
 YenToEuroConverter.i: YenToEuroConverter.cpp.i
@@ -211,7 +220,7 @@ YenToEuroConverter.i: YenToEuroConverter.cpp.i
 
 # target to preprocess a source file
 YenToEuroConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/EtoD.dir/build.make CMakeFiles/EtoD.dir/YenToEuroConverter.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/YenToEuroConverter.cpp.i
 .PHONY : YenToEuroConverter.cpp.i
 
 YenToEuroConverter.s: YenToEuroConverter.cpp.s
@@ -219,7 +228,7 @@ YenToEuroConverter.s: YenToEuroConverter.cpp.s
 
 # target to generate assembly for a file
 YenToEuroConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/EtoD.dir/build.make CMakeFiles/EtoD.dir/YenToEuroConverter.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/YenToEuroConverter.cpp.s
 .PHONY : YenToEuroConverter.cpp.s
 
 converter.o: converter.cpp.o
@@ -227,10 +236,7 @@ converter.o: converter.cpp.o
 
 # target to build an object file
 converter.cpp.o:
-	$(MAKE) -f CMakeFiles/CtoF.dir/build.make CMakeFiles/CtoF.dir/converter.cpp.o
-	$(MAKE) -f CMakeFiles/DtoE.dir/build.make CMakeFiles/DtoE.dir/converter.cpp.o
-	$(MAKE) -f CMakeFiles/EtoD.dir/build.make CMakeFiles/EtoD.dir/converter.cpp.o
-	$(MAKE) -f CMakeFiles/FtoC.dir/build.make CMakeFiles/FtoC.dir/converter.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/converter.cpp.o
 .PHONY : converter.cpp.o
 
 converter.i: converter.cpp.i
@@ -238,10 +244,7 @@ converter.i: converter.cpp.i
 
 # target to preprocess a source file
 converter.cpp.i:
-	$(MAKE) -f CMakeFiles/CtoF.dir/build.make CMakeFiles/CtoF.dir/converter.cpp.i
-	$(MAKE) -f CMakeFiles/DtoE.dir/build.make CMakeFiles/DtoE.dir/converter.cpp.i
-	$(MAKE) -f CMakeFiles/EtoD.dir/build.make CMakeFiles/EtoD.dir/converter.cpp.i
-	$(MAKE) -f CMakeFiles/FtoC.dir/build.make CMakeFiles/FtoC.dir/converter.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/converter.cpp.i
 .PHONY : converter.cpp.i
 
 converter.s: converter.cpp.s
@@ -249,45 +252,15 @@ converter.s: converter.cpp.s
 
 # target to generate assembly for a file
 converter.cpp.s:
-	$(MAKE) -f CMakeFiles/CtoF.dir/build.make CMakeFiles/CtoF.dir/converter.cpp.s
-	$(MAKE) -f CMakeFiles/DtoE.dir/build.make CMakeFiles/DtoE.dir/converter.cpp.s
-	$(MAKE) -f CMakeFiles/EtoD.dir/build.make CMakeFiles/EtoD.dir/converter.cpp.s
-	$(MAKE) -f CMakeFiles/FtoC.dir/build.make CMakeFiles/FtoC.dir/converter.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/converter.cpp.s
 .PHONY : converter.cpp.s
-
-currency_converter.o: currency_converter.cpp.o
-.PHONY : currency_converter.o
-
-# target to build an object file
-currency_converter.cpp.o:
-	$(MAKE) -f CMakeFiles/DtoE.dir/build.make CMakeFiles/DtoE.dir/currency_converter.cpp.o
-	$(MAKE) -f CMakeFiles/EtoD.dir/build.make CMakeFiles/EtoD.dir/currency_converter.cpp.o
-.PHONY : currency_converter.cpp.o
-
-currency_converter.i: currency_converter.cpp.i
-.PHONY : currency_converter.i
-
-# target to preprocess a source file
-currency_converter.cpp.i:
-	$(MAKE) -f CMakeFiles/DtoE.dir/build.make CMakeFiles/DtoE.dir/currency_converter.cpp.i
-	$(MAKE) -f CMakeFiles/EtoD.dir/build.make CMakeFiles/EtoD.dir/currency_converter.cpp.i
-.PHONY : currency_converter.cpp.i
-
-currency_converter.s: currency_converter.cpp.s
-.PHONY : currency_converter.s
-
-# target to generate assembly for a file
-currency_converter.cpp.s:
-	$(MAKE) -f CMakeFiles/DtoE.dir/build.make CMakeFiles/DtoE.dir/currency_converter.cpp.s
-	$(MAKE) -f CMakeFiles/EtoD.dir/build.make CMakeFiles/EtoD.dir/currency_converter.cpp.s
-.PHONY : currency_converter.cpp.s
 
 dollartoeuroconverter.o: dollartoeuroconverter.cpp.o
 .PHONY : dollartoeuroconverter.o
 
 # target to build an object file
 dollartoeuroconverter.cpp.o:
-	$(MAKE) -f CMakeFiles/DtoE.dir/build.make CMakeFiles/DtoE.dir/dollartoeuroconverter.cpp.o
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/dollartoeuroconverter.cpp.o
 .PHONY : dollartoeuroconverter.cpp.o
 
 dollartoeuroconverter.i: dollartoeuroconverter.cpp.i
@@ -295,7 +268,7 @@ dollartoeuroconverter.i: dollartoeuroconverter.cpp.i
 
 # target to preprocess a source file
 dollartoeuroconverter.cpp.i:
-	$(MAKE) -f CMakeFiles/DtoE.dir/build.make CMakeFiles/DtoE.dir/dollartoeuroconverter.cpp.i
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/dollartoeuroconverter.cpp.i
 .PHONY : dollartoeuroconverter.cpp.i
 
 dollartoeuroconverter.s: dollartoeuroconverter.cpp.s
@@ -303,35 +276,32 @@ dollartoeuroconverter.s: dollartoeuroconverter.cpp.s
 
 # target to generate assembly for a file
 dollartoeuroconverter.cpp.s:
-	$(MAKE) -f CMakeFiles/DtoE.dir/build.make CMakeFiles/DtoE.dir/dollartoeuroconverter.cpp.s
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/dollartoeuroconverter.cpp.s
 .PHONY : dollartoeuroconverter.cpp.s
 
-temp_converter.o: temp_converter.cpp.o
-.PHONY : temp_converter.o
+main.o: main.cpp.o
+.PHONY : main.o
 
 # target to build an object file
-temp_converter.cpp.o:
-	$(MAKE) -f CMakeFiles/CtoF.dir/build.make CMakeFiles/CtoF.dir/temp_converter.cpp.o
-	$(MAKE) -f CMakeFiles/FtoC.dir/build.make CMakeFiles/FtoC.dir/temp_converter.cpp.o
-.PHONY : temp_converter.cpp.o
+main.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.o
+.PHONY : main.cpp.o
 
-temp_converter.i: temp_converter.cpp.i
-.PHONY : temp_converter.i
+main.i: main.cpp.i
+.PHONY : main.i
 
 # target to preprocess a source file
-temp_converter.cpp.i:
-	$(MAKE) -f CMakeFiles/CtoF.dir/build.make CMakeFiles/CtoF.dir/temp_converter.cpp.i
-	$(MAKE) -f CMakeFiles/FtoC.dir/build.make CMakeFiles/FtoC.dir/temp_converter.cpp.i
-.PHONY : temp_converter.cpp.i
+main.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.i
+.PHONY : main.cpp.i
 
-temp_converter.s: temp_converter.cpp.s
-.PHONY : temp_converter.s
+main.s: main.cpp.s
+.PHONY : main.s
 
 # target to generate assembly for a file
-temp_converter.cpp.s:
-	$(MAKE) -f CMakeFiles/CtoF.dir/build.make CMakeFiles/CtoF.dir/temp_converter.cpp.s
-	$(MAKE) -f CMakeFiles/FtoC.dir/build.make CMakeFiles/FtoC.dir/temp_converter.cpp.s
-.PHONY : temp_converter.cpp.s
+main.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.s
+.PHONY : main.cpp.s
 
 # Help Target
 help:
@@ -339,33 +309,33 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... CtoF"
-	@echo "... DtoE"
-	@echo "... EtoD"
-	@echo "... FtoC"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... test"
 	@echo "... CelsiusToFahrenheitConverter.o"
 	@echo "... CelsiusToFahrenheitConverter.i"
 	@echo "... CelsiusToFahrenheitConverter.s"
+	@echo "... CurrencyConverter.o"
+	@echo "... CurrencyConverter.i"
+	@echo "... CurrencyConverter.s"
 	@echo "... FahrenheitToCelsiusConverter.o"
 	@echo "... FahrenheitToCelsiusConverter.i"
 	@echo "... FahrenheitToCelsiusConverter.s"
+	@echo "... TempConverter.o"
+	@echo "... TempConverter.i"
+	@echo "... TempConverter.s"
 	@echo "... YenToEuroConverter.o"
 	@echo "... YenToEuroConverter.i"
 	@echo "... YenToEuroConverter.s"
 	@echo "... converter.o"
 	@echo "... converter.i"
 	@echo "... converter.s"
-	@echo "... currency_converter.o"
-	@echo "... currency_converter.i"
-	@echo "... currency_converter.s"
 	@echo "... dollartoeuroconverter.o"
 	@echo "... dollartoeuroconverter.i"
 	@echo "... dollartoeuroconverter.s"
-	@echo "... temp_converter.o"
-	@echo "... temp_converter.i"
-	@echo "... temp_converter.s"
+	@echo "... main.o"
+	@echo "... main.i"
+	@echo "... main.s"
 .PHONY : help
 
 

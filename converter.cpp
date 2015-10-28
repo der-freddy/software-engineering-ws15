@@ -1,5 +1,5 @@
 #include "converter.hpp"
 
-converter::Converter()
+Converter::Converter()
 {
 }

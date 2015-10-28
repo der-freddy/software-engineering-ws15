@@ -1,19 +1,21 @@
-#include "CelsiusToFahrenheitConverter.hpp"
+#include "FahrenheitToCelsiusConverter.hpp"
 
 	//Constructor
-	CelsiusToFahrenheit::CelsiusToFahrenheit();
-	CelsiusToFahrenheit::~CelsiusToFahrenheit();
+	FahrenheitToCelsiusConverter::FahrenheitToCelsiusConverter()
+	{}
+	FahrenheitToCelsiusConverter::~FahrenheitToCelsiusConverter()
+	{}
 
-	double CelsiusToFahrenheit::convert(double inValue)
+	double FahrenheitToCelsiusConverter::convert(double inValue)
 	{
 		return (inValue-32)*(5/9);
 	}
 
-	std::string CelsiusToFahrenheit::toString() const
+	std::string FahrenheitToCelsiusConverter::toString() const
 	{
 		return "Fahrenheit To Celsius Converter";
 	}
-    void CelsiusToFahrenheit::print() const
+    void FahrenheitToCelsiusConverter::print() const
     {
     	std::cout << toString();
     }

@@ -1,9 +1,9 @@
 #ifndef DOLLARTOEUROCONVERTER_H
 #define DOLLARTOEUROCONVERTER_H
 
-#include "converter.hpp"
+#include "CurrencyConverter.hpp"
 
-class dollarToEuroConverter : public Converter
+class dollarToEuroConverter : public CurrencyConverter
 {
   public:
     dollarToEuroConverter();

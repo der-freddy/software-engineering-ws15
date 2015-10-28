@@ -2,14 +2,14 @@
 #define FtoC
 #include <string>
 #include <iostream>
-#include "converter.hpp"
+#include "TempConverter.hpp"
 
-class FahrenheitToCelsius : public TempConverter
+class FahrenheitToCelsiusConverter : public TempConverter
 {
 	public:
 		//Constructor
-		FahrenheitToCelsius();
-		~FahrenheitToCelsius();
+		FahrenheitToCelsiusConverter();
+		~FahrenheitToCelsiusConverter();
 
 		double convert(double inValue) override;
 	    std::string toString() const override;

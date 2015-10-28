@@ -4,12 +4,12 @@
 #include <iostream>
 #include "TempConverter.hpp"
 
-class CelsiusToFahrenheit : public TempConverter
+class CelsiusToFahrenheitConverter : public TempConverter
 {
 	public:
 		//Constructor
-		CelsiusToFahrenheit();
-		~CelsiusToFahrenheit();
+		CelsiusToFahrenheitConverter();
+		~CelsiusToFahrenheitConverter();
 
 		double convert(double inValue) override;
 	    std::string toString() const override;
