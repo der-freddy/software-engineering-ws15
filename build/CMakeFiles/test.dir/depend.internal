@@ -15,6 +15,11 @@ CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/FahrenheitToCelsiusConverter.hpp
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/TempConverter.hpp
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/converter.hpp
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.o
+ /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CurrencyConverter.hpp
+ /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/GoldToEuroConverter.cpp
+ /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/GoldToEuroConverter.hpp
+ /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/converter.hpp
 CMakeFiles/test.dir/TempConverter.cpp.o
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/TempConverter.cpp
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/TempConverter.hpp
@@ -36,6 +41,7 @@ CMakeFiles/test.dir/main.cpp.o
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CelsiusToFahrenheitConverter.hpp
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CurrencyConverter.hpp
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/FahrenheitToCelsiusConverter.hpp
+ /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/GoldToEuroConverter.hpp
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/TempConverter.hpp
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/YenToEuroConverter.hpp
  /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/converter.hpp

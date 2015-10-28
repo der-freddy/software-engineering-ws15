@@ -7,6 +7,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/test.dir/converter.cpp.o"
   "CMakeFiles/test.dir/TempConverter.cpp.o"
   "CMakeFiles/test.dir/CurrencyConverter.cpp.o"
+  "CMakeFiles/test.dir/GoldToEuroConverter.cpp.o"
   "test.pdb"
   "test"
 )

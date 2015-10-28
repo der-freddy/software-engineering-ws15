@@ -183,6 +183,30 @@ FahrenheitToCelsiusConverter.cpp.s:
 	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.s
 .PHONY : FahrenheitToCelsiusConverter.cpp.s
 
+GoldToEuroConverter.o: GoldToEuroConverter.cpp.o
+.PHONY : GoldToEuroConverter.o
+
+# target to build an object file
+GoldToEuroConverter.cpp.o:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/GoldToEuroConverter.cpp.o
+.PHONY : GoldToEuroConverter.cpp.o
+
+GoldToEuroConverter.i: GoldToEuroConverter.cpp.i
+.PHONY : GoldToEuroConverter.i
+
+# target to preprocess a source file
+GoldToEuroConverter.cpp.i:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/GoldToEuroConverter.cpp.i
+.PHONY : GoldToEuroConverter.cpp.i
+
+GoldToEuroConverter.s: GoldToEuroConverter.cpp.s
+.PHONY : GoldToEuroConverter.s
+
+# target to generate assembly for a file
+GoldToEuroConverter.cpp.s:
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/GoldToEuroConverter.cpp.s
+.PHONY : GoldToEuroConverter.cpp.s
+
 TempConverter.o: TempConverter.cpp.o
 .PHONY : TempConverter.o
 
@@ -321,6 +345,9 @@ help:
 	@echo "... FahrenheitToCelsiusConverter.o"
 	@echo "... FahrenheitToCelsiusConverter.i"
 	@echo "... FahrenheitToCelsiusConverter.s"
+	@echo "... GoldToEuroConverter.o"
+	@echo "... GoldToEuroConverter.i"
+	@echo "... GoldToEuroConverter.s"
 	@echo "... TempConverter.o"
 	@echo "... TempConverter.i"
 	@echo "... TempConverter.s"

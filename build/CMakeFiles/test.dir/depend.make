@@ -15,6 +15,11 @@ CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o: ../FahrenheitToCelsiusCo
 CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o: ../TempConverter.hpp
 CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o: ../converter.hpp
 
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.o: ../CurrencyConverter.hpp
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.o: ../GoldToEuroConverter.cpp
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.o: ../GoldToEuroConverter.hpp
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.o: ../converter.hpp
+
 CMakeFiles/test.dir/TempConverter.cpp.o: ../TempConverter.cpp
 CMakeFiles/test.dir/TempConverter.cpp.o: ../TempConverter.hpp
 CMakeFiles/test.dir/TempConverter.cpp.o: ../converter.hpp
@@ -35,6 +40,7 @@ CMakeFiles/test.dir/dollartoeuroconverter.cpp.o: ../dollartoeuroconverter.hpp
 CMakeFiles/test.dir/main.cpp.o: ../CelsiusToFahrenheitConverter.hpp
 CMakeFiles/test.dir/main.cpp.o: ../CurrencyConverter.hpp
 CMakeFiles/test.dir/main.cpp.o: ../FahrenheitToCelsiusConverter.hpp
+CMakeFiles/test.dir/main.cpp.o: ../GoldToEuroConverter.hpp
 CMakeFiles/test.dir/main.cpp.o: ../TempConverter.hpp
 CMakeFiles/test.dir/main.cpp.o: ../YenToEuroConverter.hpp
 CMakeFiles/test.dir/main.cpp.o: ../converter.hpp

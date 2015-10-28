@@ -3,3 +3,6 @@
 Converter::Converter()
 {
 }
+Converter::~Converter()
+{
+}

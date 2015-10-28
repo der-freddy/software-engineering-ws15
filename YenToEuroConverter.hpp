@@ -7,7 +7,8 @@ class YenToEuroConverter : public CurrencyConverter
 {
   public:
     YenToEuroConverter();
-    double convert(double inDollars);
+    ~YenToEuroConverter();
+    double convert(double inYen);
     std::string toString() const;
     void print() const;
 };

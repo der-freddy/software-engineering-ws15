@@ -6,6 +6,10 @@ dollarToEuroConverter::dollarToEuroConverter()
 {
 }
 
+dollarToEuroConverter::~dollarToEuroConverter()
+{
+}
+
 /*In: double value of dollars
  *Out: Euro value of input dollars as of 9.10.15
  */

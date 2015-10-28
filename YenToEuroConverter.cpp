@@ -5,12 +5,16 @@
 YenToEuroConverter::YenToEuroConverter()
 {
 }
+YenToEuroConverter::~YenToEuroConverter()
+{
+}
 
-/*In: double value of dollars
- *Out: Euro value of input dollars as of 9.10.15
+
+/*In: double value of Yen
+ *Out: Euro value of input yen as of 28.10.15
  */
-double YenToEuroConverter::convert(double inputDollars){
-  return inputDollars*0.7517*pow(10,-2);
+double YenToEuroConverter::convert(double inputYen){
+  return inputYen*0.7517*pow(10,-2);
 }
 
 std::string YenToEuroConverter::toString() const{

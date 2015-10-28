@@ -233,6 +233,29 @@ CMakeFiles/test.dir/CurrencyConverter.cpp.o.provides: CMakeFiles/test.dir/Curren
 
 CMakeFiles/test.dir/CurrencyConverter.cpp.o.provides.build: CMakeFiles/test.dir/CurrencyConverter.cpp.o
 
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.o: ../GoldToEuroConverter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/GoldToEuroConverter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/GoldToEuroConverter.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/GoldToEuroConverter.cpp
+
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/GoldToEuroConverter.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/GoldToEuroConverter.cpp > CMakeFiles/test.dir/GoldToEuroConverter.cpp.i
+
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/GoldToEuroConverter.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/GoldToEuroConverter.cpp -o CMakeFiles/test.dir/GoldToEuroConverter.cpp.s
+
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.requires:
+.PHONY : CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.requires
+
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.provides: CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.provides.build
+.PHONY : CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.provides
+
+CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.provides.build: CMakeFiles/test.dir/GoldToEuroConverter.cpp.o
+
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/main.cpp.o" \
@@ -242,7 +265,8 @@ test_OBJECTS = \
 "CMakeFiles/test.dir/YenToEuroConverter.cpp.o" \
 "CMakeFiles/test.dir/converter.cpp.o" \
 "CMakeFiles/test.dir/TempConverter.cpp.o" \
-"CMakeFiles/test.dir/CurrencyConverter.cpp.o"
+"CMakeFiles/test.dir/CurrencyConverter.cpp.o" \
+"CMakeFiles/test.dir/GoldToEuroConverter.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
@@ -255,6 +279,7 @@ test: CMakeFiles/test.dir/YenToEuroConverter.cpp.o
 test: CMakeFiles/test.dir/converter.cpp.o
 test: CMakeFiles/test.dir/TempConverter.cpp.o
 test: CMakeFiles/test.dir/CurrencyConverter.cpp.o
+test: CMakeFiles/test.dir/GoldToEuroConverter.cpp.o
 test: CMakeFiles/test.dir/build.make
 test: CMakeFiles/test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable test"
@@ -272,6 +297,7 @@ CMakeFiles/test.dir/requires: CMakeFiles/test.dir/YenToEuroConverter.cpp.o.requi
 CMakeFiles/test.dir/requires: CMakeFiles/test.dir/converter.cpp.o.requires
 CMakeFiles/test.dir/requires: CMakeFiles/test.dir/TempConverter.cpp.o.requires
 CMakeFiles/test.dir/requires: CMakeFiles/test.dir/CurrencyConverter.cpp.o.requires
+CMakeFiles/test.dir/requires: CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.requires
 .PHONY : CMakeFiles/test.dir/requires
 
 CMakeFiles/test.dir/clean:

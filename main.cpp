@@ -4,6 +4,7 @@
 #include "CelsiusToFahrenheitConverter.hpp"
 #include "FahrenheitToCelsiusConverter.hpp"
 #include "YenToEuroConverter.hpp"
+#include "GoldToEuroConverter.hpp"
 
 
 int main(int argc, char* argv[])
@@ -31,10 +32,20 @@ int main(int argc, char* argv[])
   aLotOfEuros = yentoeuro->convert(aLotOfYen);
   std::cout << yentoeuro->toString() << " has converted "<< aLotOfYen << " Yen to " << aLotOfEuros <<" Euros!\n"<<std::endl;
 
+  //Gold to Euro
+
+  auto goldtoeuro = std::make_shared<GoldToEuroConverter>();
+  double gold = 52;
+  double euro = goldtoeuro->convert(gold);
+  std::cout << goldtoeuro->toString() << " has converted " << gold << "oz to " << euro << " Euros!\n"<<std::endl;
+  //Fahrenheit to Celsius Converter
+
   auto ftoc = std::make_shared<FahrenheitToCelsiusConverter>();
   double fahrenheit = 32;
   double celsius = ftoc->convert(fahrenheit);
   std::cout << ftoc->toString() << " has converted "<< fahrenheit << " Fahrenheit to " << celsius <<" Celsius!\n"<<std::endl;  
+
+  //Celsius to Fahrenheit Converter
 
   auto ctof = std::make_shared<CelsiusToFahrenheitConverter>();
   celsius = 100;

@@ -7,6 +7,7 @@ class dollarToEuroConverter : public CurrencyConverter
 {
   public:
     dollarToEuroConverter();
+    ~dollarToEuroConverter();
     double convert(double inDollars);
     std::string toString() const;
     void print() const;
