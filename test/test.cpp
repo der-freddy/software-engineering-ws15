@@ -1,5 +1,5 @@
 #include "tinytest.h"
-#include "../dollartoeuroconverter.hpp"
+#include "../DollarToEuroConverter.hpp"
 #include "../YenToEuroConverter.hpp"
 #include "../GoldToEuroConverter.hpp"
 #include "../FahrenheitToCelsiusConverter.hpp"
@@ -8,7 +8,7 @@
 
 int testDollarToEuroConverter()
 {
-  	auto myConverter = std::make_shared<dollarToEuroConverter>();
+  	auto myConverter = std::make_shared<DollarToEuroConverter>();
 
 	TINYTEST_EQUAL_EPSILON(0.0, myConverter->convert(0.0));
 	TINYTEST_EQUAL_EPSILON(8800.0, myConverter->convert(10000.0));
