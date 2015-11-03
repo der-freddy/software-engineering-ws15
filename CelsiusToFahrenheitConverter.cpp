@@ -8,7 +8,10 @@
 
 	double CelsiusToFahrenheitConverter::convert(double inValue)
 	{
-		return inValue*1.8+32;
+		double tmp = (inValue*1.8)+32;
+
+		return (double)((int) (tmp*10))/10;
+
 	}
 
 	std::string CelsiusToFahrenheitConverter::toString() const

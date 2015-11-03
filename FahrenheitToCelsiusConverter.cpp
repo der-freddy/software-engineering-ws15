@@ -8,7 +8,11 @@
 
 	double FahrenheitToCelsiusConverter::convert(double inValue)
 	{
-		return (inValue-32)*(5/9);
+		double tmp = (inValue-32)*(5.0/9.0);
+		
+
+		return (double)((int) (tmp*10))/10;
+		
 	}
 
 	std::string FahrenheitToCelsiusConverter::toString() const

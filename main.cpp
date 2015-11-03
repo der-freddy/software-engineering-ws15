@@ -44,7 +44,7 @@ int main(int argc, char* argv[])
   //Fahrenheit to Celsius Converter
 
   auto ftoc = std::make_shared<FahrenheitToCelsiusConverter>();
-  double fahrenheit = 32;
+  double fahrenheit = 80;
   double celsius = ftoc->convert(fahrenheit);
   std::cout << ftoc->toString() << " has converted "<< fahrenheit << " Fahrenheit to " << celsius <<" Celsius!\n"<<std::endl;  
 
