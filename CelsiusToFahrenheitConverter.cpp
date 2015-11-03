@@ -19,4 +19,3 @@
     {
     	std::cout << toString();
     }
-

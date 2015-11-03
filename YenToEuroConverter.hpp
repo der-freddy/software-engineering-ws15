@@ -13,4 +13,4 @@ class YenToEuroConverter : public CurrencyConverter
     void print() const;
 };
 
-#endif // DOLLARTOEUROCONVERTER_H
+#endif // YENTOEUROCONVERTER_H

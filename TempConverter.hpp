@@ -2,10 +2,10 @@
 #define TEMP_CONVERTER
 #include <string>
 #include <iostream>
-#include "converter.hpp"
+#include "UnitConverter.hpp"
 
 
-class TempConverter : public Converter
+class TempConverter : public UnitConverter
 {
 public:
 	//Constructor
