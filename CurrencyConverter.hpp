@@ -2,9 +2,9 @@
 #define CURRENCY_CONVERTER
 #include <string>
 #include <iostream>
-#include "converter.hpp"
+#include "UnitConverter.hpp"
 
-class CurrencyConverter : public Converter
+class CurrencyConverter : public UnitConverter
 {
 public:
 	//Constructor

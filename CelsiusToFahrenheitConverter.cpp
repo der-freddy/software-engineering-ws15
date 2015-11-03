@@ -22,4 +22,3 @@
     {
     	std::cout << toString();
     }
-
