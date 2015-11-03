@@ -7,6 +7,7 @@
 #include "GoldToEuroConverter.hpp"
 #include "tinytest.h"
 
+
 int main(int argc, char* argv[])
 {
   //std::string conversion = argv[0];
@@ -24,8 +25,7 @@ int main(int argc, char* argv[])
   double aLotOfDollars = 10000;
   double aLotOfEuros = myConverter->convert(aLotOfDollars);
   std::cout << myConverter->toString() << " has converted "<< aLotOfDollars << " Dollar to " << aLotOfEuros <<" Euros!\n"<<std::endl;
-  
-  TINYTEST_ASSERT(aLotOfEuros = 8800);
+
 
   // Yen to Euro Converter
 
@@ -55,6 +55,6 @@ int main(int argc, char* argv[])
   fahrenheit = ctof->convert(celsius);
   std::cout << ctof->toString() << " has converted "<< fahrenheit << " Celsius to " << celsius <<" Fahrenheit!\n"<<std::endl;    
 
+
   return 0;
 }
-
