@@ -1,31 +1,20 @@
-#include <memory>
-#include <iostream>
-#include "dollartoeuroconverter.hpp"
+#include "DollarToEuroConverter.hpp"
 #include "CelsiusToFahrenheitConverter.hpp"
 #include "FahrenheitToCelsiusConverter.hpp"
 #include "YenToEuroConverter.hpp"
 #include "GoldToEuroConverter.hpp"
 #include "tinytest.h"
 
+#include <memory>
+#include <iostream>
 
 int main(int argc, char* argv[])
 {
-  //std::string conversion = argv[0];
-  //std::string value = argv[1];
-
-  /*
-   * TODO
-   *
-   * use desired conversion here
-   *
-  */
-
   // Dollar to Euro Converter
-  auto myConverter = std::make_shared<dollarToEuroConverter>();
+  auto myConverter = std::make_shared<DollarToEuroConverter>();
   double aLotOfDollars = 10000;
   double aLotOfEuros = myConverter->convert(aLotOfDollars);
   std::cout << myConverter->toString() << " has converted "<< aLotOfDollars << " Dollar to " << aLotOfEuros <<" Euros!\n"<<std::endl;
-
 
   // Yen to Euro Converter
 
