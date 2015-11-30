@@ -8,6 +8,7 @@
 #include <memory>
 #include <iostream>
 #include <string>
+
 int main(int argc, char* argv[])
 {
 
@@ -54,6 +55,7 @@ int main(int argc, char* argv[])
 	double fahrenheit = ctof->convert(arg2);
 	std::cout << ctof->toString() << " has converted "<< arg2 << " Celsius to " << fahrenheit <<" Fahrenheit!\n"<<std::endl;    
 	}
+	
 	else
 	{
 	std::cout << "ERROR" <<std::endl;
