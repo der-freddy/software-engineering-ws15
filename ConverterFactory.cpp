@@ -1,4 +1,6 @@
 #include "ConverterFactory.hpp"
+#include <memory>
+
 
 ConverterFactory::ConverterFactory()
 {}
@@ -10,7 +12,7 @@ std::shared_ptr<UnitConverter> ConverterFactory::create()
 	return converter;
 }
 
-static std::unique_ptr<ConverterFactory> ConverterFactory::s_instance()
+std::unique_ptr<ConverterFactory> ConverterFactory::s_instance_method()
 {
 	//if there is no instance "behind" s_instance: create one
 	if(s_instance == NULL)
