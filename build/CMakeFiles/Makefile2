@@ -56,38 +56,38 @@ CMAKE_SOURCE_DIR = /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Ab
 CMAKE_BINARY_DIR = /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build
 
 #=============================================================================
-# Target rules for target CMakeFiles/test.dir
+# Target rules for target CMakeFiles/converter.dir
 
 # All Build rule for target.
-CMakeFiles/test.dir/all:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/depend
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
+CMakeFiles/converter.dir/all:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/depend
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles  1 2 3 4 5 6 7 8 9 10
-	@echo "Built target test"
-.PHONY : CMakeFiles/test.dir/all
+	@echo "Built target converter"
+.PHONY : CMakeFiles/converter.dir/all
 
 # Include target in all.
-all: CMakeFiles/test.dir/all
+all: CMakeFiles/converter.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/test.dir/rule: cmake_check_build_system
+CMakeFiles/converter.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/converter.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles 0
-.PHONY : CMakeFiles/test.dir/rule
+.PHONY : CMakeFiles/converter.dir/rule
 
 # Convenience name for target.
-test: CMakeFiles/test.dir/rule
-.PHONY : test
+converter: CMakeFiles/converter.dir/rule
+.PHONY : converter
 
 # clean rule for target.
-CMakeFiles/test.dir/clean:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/clean
-.PHONY : CMakeFiles/test.dir/clean
+CMakeFiles/converter.dir/clean:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/clean
+.PHONY : CMakeFiles/converter.dir/clean
 
 # clean rule for target.
-clean: CMakeFiles/test.dir/clean
+clean: CMakeFiles/converter.dir/clean
 .PHONY : clean
 
 #=============================================================================

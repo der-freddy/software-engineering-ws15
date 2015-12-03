@@ -102,24 +102,24 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named converter
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test
-.PHONY : test
+converter: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 converter
+.PHONY : converter
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+converter/fast:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/build
+.PHONY : converter/fast
 
 CelsiusToFahrenheitConverter.o: CelsiusToFahrenheitConverter.cpp.o
 .PHONY : CelsiusToFahrenheitConverter.o
 
 # target to build an object file
 CelsiusToFahrenheitConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/CelsiusToFahrenheitConverter.cpp.o
 .PHONY : CelsiusToFahrenheitConverter.cpp.o
 
 CelsiusToFahrenheitConverter.i: CelsiusToFahrenheitConverter.cpp.i
@@ -127,7 +127,7 @@ CelsiusToFahrenheitConverter.i: CelsiusToFahrenheitConverter.cpp.i
 
 # target to preprocess a source file
 CelsiusToFahrenheitConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.i
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/CelsiusToFahrenheitConverter.cpp.i
 .PHONY : CelsiusToFahrenheitConverter.cpp.i
 
 CelsiusToFahrenheitConverter.s: CelsiusToFahrenheitConverter.cpp.s
@@ -135,7 +135,7 @@ CelsiusToFahrenheitConverter.s: CelsiusToFahrenheitConverter.cpp.s
 
 # target to generate assembly for a file
 CelsiusToFahrenheitConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.s
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/CelsiusToFahrenheitConverter.cpp.s
 .PHONY : CelsiusToFahrenheitConverter.cpp.s
 
 ConverterFactory.o: ConverterFactory.cpp.o
@@ -143,7 +143,7 @@ ConverterFactory.o: ConverterFactory.cpp.o
 
 # target to build an object file
 ConverterFactory.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/ConverterFactory.cpp.o
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/ConverterFactory.cpp.o
 .PHONY : ConverterFactory.cpp.o
 
 ConverterFactory.i: ConverterFactory.cpp.i
@@ -151,7 +151,7 @@ ConverterFactory.i: ConverterFactory.cpp.i
 
 # target to preprocess a source file
 ConverterFactory.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/ConverterFactory.cpp.i
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/ConverterFactory.cpp.i
 .PHONY : ConverterFactory.cpp.i
 
 ConverterFactory.s: ConverterFactory.cpp.s
@@ -159,7 +159,7 @@ ConverterFactory.s: ConverterFactory.cpp.s
 
 # target to generate assembly for a file
 ConverterFactory.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/ConverterFactory.cpp.s
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/ConverterFactory.cpp.s
 .PHONY : ConverterFactory.cpp.s
 
 CurrencyConverter.o: CurrencyConverter.cpp.o
@@ -167,7 +167,7 @@ CurrencyConverter.o: CurrencyConverter.cpp.o
 
 # target to build an object file
 CurrencyConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CurrencyConverter.cpp.o
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/CurrencyConverter.cpp.o
 .PHONY : CurrencyConverter.cpp.o
 
 CurrencyConverter.i: CurrencyConverter.cpp.i
@@ -175,7 +175,7 @@ CurrencyConverter.i: CurrencyConverter.cpp.i
 
 # target to preprocess a source file
 CurrencyConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CurrencyConverter.cpp.i
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/CurrencyConverter.cpp.i
 .PHONY : CurrencyConverter.cpp.i
 
 CurrencyConverter.s: CurrencyConverter.cpp.s
@@ -183,7 +183,7 @@ CurrencyConverter.s: CurrencyConverter.cpp.s
 
 # target to generate assembly for a file
 CurrencyConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/CurrencyConverter.cpp.s
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/CurrencyConverter.cpp.s
 .PHONY : CurrencyConverter.cpp.s
 
 DollarToEuroConverter.o: DollarToEuroConverter.cpp.o
@@ -191,7 +191,7 @@ DollarToEuroConverter.o: DollarToEuroConverter.cpp.o
 
 # target to build an object file
 DollarToEuroConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/DollarToEuroConverter.cpp.o
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/DollarToEuroConverter.cpp.o
 .PHONY : DollarToEuroConverter.cpp.o
 
 DollarToEuroConverter.i: DollarToEuroConverter.cpp.i
@@ -199,7 +199,7 @@ DollarToEuroConverter.i: DollarToEuroConverter.cpp.i
 
 # target to preprocess a source file
 DollarToEuroConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/DollarToEuroConverter.cpp.i
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/DollarToEuroConverter.cpp.i
 .PHONY : DollarToEuroConverter.cpp.i
 
 DollarToEuroConverter.s: DollarToEuroConverter.cpp.s
@@ -207,7 +207,7 @@ DollarToEuroConverter.s: DollarToEuroConverter.cpp.s
 
 # target to generate assembly for a file
 DollarToEuroConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/DollarToEuroConverter.cpp.s
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/DollarToEuroConverter.cpp.s
 .PHONY : DollarToEuroConverter.cpp.s
 
 FahrenheitToCelsiusConverter.o: FahrenheitToCelsiusConverter.cpp.o
@@ -215,7 +215,7 @@ FahrenheitToCelsiusConverter.o: FahrenheitToCelsiusConverter.cpp.o
 
 # target to build an object file
 FahrenheitToCelsiusConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/FahrenheitToCelsiusConverter.cpp.o
 .PHONY : FahrenheitToCelsiusConverter.cpp.o
 
 FahrenheitToCelsiusConverter.i: FahrenheitToCelsiusConverter.cpp.i
@@ -223,7 +223,7 @@ FahrenheitToCelsiusConverter.i: FahrenheitToCelsiusConverter.cpp.i
 
 # target to preprocess a source file
 FahrenheitToCelsiusConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.i
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/FahrenheitToCelsiusConverter.cpp.i
 .PHONY : FahrenheitToCelsiusConverter.cpp.i
 
 FahrenheitToCelsiusConverter.s: FahrenheitToCelsiusConverter.cpp.s
@@ -231,7 +231,7 @@ FahrenheitToCelsiusConverter.s: FahrenheitToCelsiusConverter.cpp.s
 
 # target to generate assembly for a file
 FahrenheitToCelsiusConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.s
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/FahrenheitToCelsiusConverter.cpp.s
 .PHONY : FahrenheitToCelsiusConverter.cpp.s
 
 GoldToEuroConverter.o: GoldToEuroConverter.cpp.o
@@ -239,7 +239,7 @@ GoldToEuroConverter.o: GoldToEuroConverter.cpp.o
 
 # target to build an object file
 GoldToEuroConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/GoldToEuroConverter.cpp.o
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/GoldToEuroConverter.cpp.o
 .PHONY : GoldToEuroConverter.cpp.o
 
 GoldToEuroConverter.i: GoldToEuroConverter.cpp.i
@@ -247,7 +247,7 @@ GoldToEuroConverter.i: GoldToEuroConverter.cpp.i
 
 # target to preprocess a source file
 GoldToEuroConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/GoldToEuroConverter.cpp.i
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/GoldToEuroConverter.cpp.i
 .PHONY : GoldToEuroConverter.cpp.i
 
 GoldToEuroConverter.s: GoldToEuroConverter.cpp.s
@@ -255,7 +255,7 @@ GoldToEuroConverter.s: GoldToEuroConverter.cpp.s
 
 # target to generate assembly for a file
 GoldToEuroConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/GoldToEuroConverter.cpp.s
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/GoldToEuroConverter.cpp.s
 .PHONY : GoldToEuroConverter.cpp.s
 
 TempConverter.o: TempConverter.cpp.o
@@ -263,7 +263,7 @@ TempConverter.o: TempConverter.cpp.o
 
 # target to build an object file
 TempConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/TempConverter.cpp.o
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/TempConverter.cpp.o
 .PHONY : TempConverter.cpp.o
 
 TempConverter.i: TempConverter.cpp.i
@@ -271,7 +271,7 @@ TempConverter.i: TempConverter.cpp.i
 
 # target to preprocess a source file
 TempConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/TempConverter.cpp.i
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/TempConverter.cpp.i
 .PHONY : TempConverter.cpp.i
 
 TempConverter.s: TempConverter.cpp.s
@@ -279,7 +279,7 @@ TempConverter.s: TempConverter.cpp.s
 
 # target to generate assembly for a file
 TempConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/TempConverter.cpp.s
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/TempConverter.cpp.s
 .PHONY : TempConverter.cpp.s
 
 UnitConverter.o: UnitConverter.cpp.o
@@ -287,7 +287,7 @@ UnitConverter.o: UnitConverter.cpp.o
 
 # target to build an object file
 UnitConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/UnitConverter.cpp.o
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/UnitConverter.cpp.o
 .PHONY : UnitConverter.cpp.o
 
 UnitConverter.i: UnitConverter.cpp.i
@@ -295,7 +295,7 @@ UnitConverter.i: UnitConverter.cpp.i
 
 # target to preprocess a source file
 UnitConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/UnitConverter.cpp.i
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/UnitConverter.cpp.i
 .PHONY : UnitConverter.cpp.i
 
 UnitConverter.s: UnitConverter.cpp.s
@@ -303,7 +303,7 @@ UnitConverter.s: UnitConverter.cpp.s
 
 # target to generate assembly for a file
 UnitConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/UnitConverter.cpp.s
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/UnitConverter.cpp.s
 .PHONY : UnitConverter.cpp.s
 
 YenToEuroConverter.o: YenToEuroConverter.cpp.o
@@ -311,7 +311,7 @@ YenToEuroConverter.o: YenToEuroConverter.cpp.o
 
 # target to build an object file
 YenToEuroConverter.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/YenToEuroConverter.cpp.o
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/YenToEuroConverter.cpp.o
 .PHONY : YenToEuroConverter.cpp.o
 
 YenToEuroConverter.i: YenToEuroConverter.cpp.i
@@ -319,7 +319,7 @@ YenToEuroConverter.i: YenToEuroConverter.cpp.i
 
 # target to preprocess a source file
 YenToEuroConverter.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/YenToEuroConverter.cpp.i
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/YenToEuroConverter.cpp.i
 .PHONY : YenToEuroConverter.cpp.i
 
 YenToEuroConverter.s: YenToEuroConverter.cpp.s
@@ -327,7 +327,7 @@ YenToEuroConverter.s: YenToEuroConverter.cpp.s
 
 # target to generate assembly for a file
 YenToEuroConverter.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/YenToEuroConverter.cpp.s
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/YenToEuroConverter.cpp.s
 .PHONY : YenToEuroConverter.cpp.s
 
 main.o: main.cpp.o
@@ -335,7 +335,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.o
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -343,7 +343,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -351,7 +351,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -360,9 +360,9 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... converter"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... CelsiusToFahrenheitConverter.o"
 	@echo "... CelsiusToFahrenheitConverter.i"
 	@echo "... CelsiusToFahrenheitConverter.s"
