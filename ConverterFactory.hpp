@@ -20,12 +20,10 @@
 class ConverterFactory
 {
 	public:
-
-		//actually needs to be private 
-		ConverterFactory();
-
 		//why the f*** can't i call it s_instance >:(
-		static std::shared_ptr<ConverterFactory> instance();
+		//static std::shared_ptr<ConverterFactory> instance();
+
+		static ConverterFactory* instance();
 
 		std::shared_ptr<UnitConverter> create(std::string const& input);
 
@@ -38,8 +36,13 @@ class ConverterFactory
 	private:
 		//Constructor
 		
+		//actually needs to be private 
+		ConverterFactory();
+		
 		//pointer to the class -> Singleton
-		static std::shared_ptr<ConverterFactory> s_instance;
+		//static std::shared_ptr<ConverterFactory> s_instance;
+
+		static ConverterFactory* s_instance;
 
 		//object registry
 		std::map<std::string, std::shared_ptr<UnitConverter>> object_registry;

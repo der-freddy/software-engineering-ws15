@@ -5,9 +5,23 @@ ConverterFactory::ConverterFactory()
 
 /*
 	returns the only instance of ConverterFactory: Singleton
-	unique_ptr would fit better, but compiler says no :(
 */
 
+ConverterFactory* ConverterFactory::instance()
+{
+	//if there is no instance "behind" s_instance: create one
+	if(!s_instance)
+	{
+		s_instance = new ConverterFactory;
+	}
+	return s_instance;
+}
+
+/*
+	What a pity! It does not work with shared_ptr :(
+*/
+
+/*
 std::shared_ptr<ConverterFactory> ConverterFactory::instance()
 {
 	//if there is no instance "behind" s_instance: create one
@@ -18,7 +32,7 @@ std::shared_ptr<ConverterFactory> ConverterFactory::instance()
 
 	return s_instance;
 }
-
+*/
 /*
 	adds an UnitConverter Object to the object_registry map
 	returns true if successfull

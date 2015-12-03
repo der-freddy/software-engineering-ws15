@@ -17,7 +17,9 @@
 #include "tinytest.h"
 
 //secure that it's a singleton
-std::shared_ptr<ConverterFactory> ConverterFactory::s_instance = nullptr;
+//std::shared_ptr<ConverterFactory> ConverterFactory::s_instance = nullptr;
+
+ConverterFactory* ConverterFactory::s_instance = nullptr;
 
 int main(int argc, char* argv[])
 {
@@ -51,6 +53,12 @@ int main(int argc, char* argv[])
 		/*
 			[2] retrieving and validating the input
 		*/
+
+		//black box testing
+		if(argc == 1)
+		{
+			throw 3;
+		}
 
 		std::string converter_name = argv[1];
 		double value = std::stod(argv[2]);
@@ -92,6 +100,7 @@ int main(int argc, char* argv[])
 		/*
 			generate the usage string
 		*/
+
 		std::string case_string = "Exception: ";
 		std::string usage_string = "Usage: " + std::string(argv[0]) + " <Converter> <Value>\nAvailable Converters:\n" + factory->print();
 
@@ -108,6 +117,12 @@ int main(int argc, char* argv[])
 			case 2:
 			{
 				case_string += "The requested converter is not available!\n";
+				break;
+			}
+
+			case 3:
+			{
+				case_string += "You need help? Take this!\n";
 				break;
 			}
 
