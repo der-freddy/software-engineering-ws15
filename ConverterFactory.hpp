@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-//for std::unique_ptry
+//for std::unique_ptr
 #include <memory>
 
 #include "UnitConverter.hpp"
