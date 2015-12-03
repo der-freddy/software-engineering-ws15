@@ -8,18 +8,19 @@ ConverterFactory::ConverterFactory()
 std::shared_ptr<UnitConverter> ConverterFactory::create(std::string const& input)
 {
 
-	auto it = mymap.find('b');
-  	if(it != mymap.end())
-    	mymap.erase (it);
+	auto it = object_registry.find(input);
+  	if(it != object_registry.end())
+    {
+    	return it->second->clone();
+    }
 	
 	/*
+	another try without .find()
 	for(auto const & element : object_registry)
 	{
 
 	}
 	*/
-
-	return std::make_shared<YenToEuroConverter>();
 }
 
 //unique_ptr would fit better

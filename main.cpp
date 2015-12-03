@@ -28,9 +28,9 @@ int main(int argc, char* argv[])
 
 	std::string name = "FahrenheitToCelsius";
 
-	auto FaToCeConv_pointer = std::make_shared<FahrenheitToCelsiusConverter>();
+	auto FaToCeConv_ptr = std::make_shared<FahrenheitToCelsiusConverter>();
 
-	factory->add_object_to_registry(name, FaToCeConv_pointer);
+	factory->add_object_to_registry(name, FaToCeConv_ptr);
 
 	/*
  	std::string arg1 = argv[1];
