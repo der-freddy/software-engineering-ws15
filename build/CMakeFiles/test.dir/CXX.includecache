@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/ConverterFactory.cpp
+ConverterFactory.hpp
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/ConverterFactory.hpp
+memory
+-
+
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/ConverterFactory.hpp
+string
+-
+iostream
+-
+memory
+-
+UnitConverter.hpp
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/UnitConverter.hpp
+
+/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/UnitConverter.hpp
+iostream
+-
+string
+-
+

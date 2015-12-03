@@ -1,4 +1,6 @@
 #include "ConverterFactory.hpp"
+#include <memory>
+
 
 ConverterFactory::ConverterFactory()
 {}

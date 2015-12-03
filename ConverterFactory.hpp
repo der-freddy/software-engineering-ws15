@@ -14,7 +14,7 @@ class ConverterFactory
 		//std::shared_ptr<UnitConverter> create();
 
 		//why the f*** can't i call it s_instance >:(
-		static std::unique_ptr<ConverterFactory> s_instance_method();
+		std::unique_ptr<ConverterFactory> s_instance_method();
 
 		std::shared_ptr<UnitConverter> create();
 
