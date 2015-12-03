@@ -1,12 +1,21 @@
 #ifndef CONVERTER_FACTORY
 #define CONVERTER_FACTORY
-#include <string>
 #include <iostream>
 
-//for std::unique_ptr
+//for pointer..ish things
 #include <memory>
 
+//for create(std::string ... input)
+#include <string>
+
+//for map object_registry
+#include <map>
+
+//basic class
 #include "UnitConverter.hpp"
+
+//derived classes
+#include "YenToEuroConverter.hpp"
 
 class ConverterFactory
 {
@@ -14,16 +23,23 @@ class ConverterFactory
 		//std::shared_ptr<UnitConverter> create();
 
 		//why the f*** can't i call it s_instance >:(
-		std::unique_ptr<ConverterFactory> s_instance_method();
+		static std::shared_ptr<ConverterFactory> s_instance_method();
 
-		std::shared_ptr<UnitConverter> create();
+		std::shared_ptr<UnitConverter> create(std::string const& input);
 
-	private:
-		//Constructor
+		//actually needs to be private 
 		ConverterFactory();
 
+		void add_object_to_registry(std::string name, std::shared_ptr<UnitConverter> pointer);
+	
+	private:
+		//Constructor
+
 		//pointer to the class -> Singleton
-		static std::unique_ptr<ConverterFactory> s_instance;
+		static std::shared_ptr<ConverterFactory> s_instance;
+
+		//object registry
+		std::map<std::string, std::shared_ptr<UnitConverter>> object_registry;
 };
 
 #endif // CONVERTER_FACTORY

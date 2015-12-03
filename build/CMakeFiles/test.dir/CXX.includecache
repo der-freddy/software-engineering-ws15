@@ -6,25 +6,43 @@
 
 #IncludeRegexTransform: 
 
-/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/ConverterFactory.cpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/ConverterFactory.cpp
 ConverterFactory.hpp
-/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/ConverterFactory.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/ConverterFactory.hpp
 memory
 -
 
-/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/ConverterFactory.hpp
-string
--
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/ConverterFactory.hpp
 iostream
 -
 memory
+-
+string
+-
+map
 -
 UnitConverter.hpp
-/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/UnitConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.hpp
+YenToEuroConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/YenToEuroConverter.hpp
 
-/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/UnitConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
+string
+-
+iostream
+-
+UnitConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.hpp
+
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.hpp
 iostream
 -
 string
 -
+memory
+-
+
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/YenToEuroConverter.hpp
+CurrencyConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
 

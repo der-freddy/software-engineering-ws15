@@ -24,3 +24,8 @@ std::string DollarToEuroConverter::toString() const{
 void DollarToEuroConverter::print() const{
   std::cout << toString();
 }
+
+std::shared_ptr<UnitConverter> DollarToEuroConverter::clone()
+{
+	return std::make_shared<DollarToEuroConverter>();
+}

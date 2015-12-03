@@ -23,6 +23,12 @@ std::string YenToEuroConverter::toString() const
 	return "Yen to Euro Converter";
 }
 
-void YenToEuroConverter::print() const{
+void YenToEuroConverter::print() const
+{
 	std::cout << toString();
+}
+
+std::shared_ptr<UnitConverter> YenToEuroConverter::clone()
+{
+	return std::make_shared<YenToEuroConverter>();
 }

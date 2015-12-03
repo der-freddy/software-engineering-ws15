@@ -5,20 +5,41 @@
 ConverterFactory::ConverterFactory()
 {}
 
-std::shared_ptr<UnitConverter> ConverterFactory::create()
+std::shared_ptr<UnitConverter> ConverterFactory::create(std::string const& input)
 {
-	return std::make_shared<UnitConverter>(nullptr);
+
+	auto it = mymap.find('b');
+  	if(it != mymap.end())
+    	mymap.erase (it);
+	
+	/*
+	for(auto const & element : object_registry)
+	{
+
+	}
+	*/
+
+	return std::make_shared<YenToEuroConverter>();
 }
 
-static std::unique_ptr<ConverterFactory> ConverterFactory::s_instance_method()
+//unique_ptr would fit better
+std::shared_ptr<ConverterFactory> ConverterFactory::s_instance_method()
 {
 	//if there is no instance "behind" s_instance: create one
-	if(s_instance == NULL)
+	if(!s_instance)
 	{
-		s_instance = std::make_unique<ConverterFactory>();
+		s_instance = std::make_shared<ConverterFactory>();
 	}
 
 	return s_instance;
+}
+
+void ConverterFactory::add_object_to_registry(std::string name, std::shared_ptr<UnitConverter> pointer)
+{
+	/*
+		there needs to be some checking, whether the name is already used
+	*/
+	object_registry.insert(std::pair<std::string, std::shared_ptr<UnitConverter>>(name,pointer));
 }
 
 /*

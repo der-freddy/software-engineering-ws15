@@ -11,6 +11,8 @@ class GoldToEuroConverter : public CurrencyConverter
     double convert(double inputGold);
     std::string toString() const;
     void print() const;
+
+    std::shared_ptr<UnitConverter> clone();
 };
 
 #endif // GOLDTHOEUROCONVERTER

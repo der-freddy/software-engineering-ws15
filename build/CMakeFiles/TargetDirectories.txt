@@ -1,1 +1,1 @@
-/home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles/test.dir
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles/test.dir

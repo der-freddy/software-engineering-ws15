@@ -16,8 +16,7 @@ public:
 	virtual std::string toString() const = 0;
 	virtual void print() const = 0;
 
-
-
+    virtual std::shared_ptr<UnitConverter> clone() = 0;
 };
 
 #endif // TEMP_CONVERTER

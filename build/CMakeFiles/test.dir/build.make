@@ -34,11 +34,14 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15
+CMAKE_SOURCE_DIR = /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build
+CMAKE_BINARY_DIR = /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/test.dir/depend.make
@@ -51,17 +54,17 @@ include CMakeFiles/test.dir/flags.make
 
 CMakeFiles/test.dir/main.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/main.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/main.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/main.cpp
 
 CMakeFiles/test.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/main.cpp > CMakeFiles/test.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/main.cpp > CMakeFiles/test.dir/main.cpp.i
 
 CMakeFiles/test.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/main.cpp -o CMakeFiles/test.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/main.cpp -o CMakeFiles/test.dir/main.cpp.s
 
 CMakeFiles/test.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/test.dir/main.cpp.o.requires
@@ -74,17 +77,17 @@ CMakeFiles/test.dir/main.cpp.o.provides.build: CMakeFiles/test.dir/main.cpp.o
 
 CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o: ../CelsiusToFahrenheitConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CelsiusToFahrenheitConverter.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CelsiusToFahrenheitConverter.cpp
 
 CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CelsiusToFahrenheitConverter.cpp > CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CelsiusToFahrenheitConverter.cpp > CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.i
 
 CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CelsiusToFahrenheitConverter.cpp -o CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CelsiusToFahrenheitConverter.cpp -o CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.s
 
 CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o.requires:
 .PHONY : CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o.requires
@@ -97,17 +100,17 @@ CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o: ../FahrenheitToCelsiusConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/FahrenheitToCelsiusConverter.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/FahrenheitToCelsiusConverter.cpp
 
 CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/FahrenheitToCelsiusConverter.cpp > CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/FahrenheitToCelsiusConverter.cpp > CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.i
 
 CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/FahrenheitToCelsiusConverter.cpp -o CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/FahrenheitToCelsiusConverter.cpp -o CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.s
 
 CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o.requires:
 .PHONY : CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o.requires
@@ -120,17 +123,17 @@ CMakeFiles/test.dir/FahrenheitToCelsiusConverter.cpp.o.provides.build: CMakeFile
 
 CMakeFiles/test.dir/DollarToEuroConverter.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/DollarToEuroConverter.cpp.o: ../DollarToEuroConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/DollarToEuroConverter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/DollarToEuroConverter.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/DollarToEuroConverter.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/DollarToEuroConverter.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/DollarToEuroConverter.cpp
 
 CMakeFiles/test.dir/DollarToEuroConverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/DollarToEuroConverter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/DollarToEuroConverter.cpp > CMakeFiles/test.dir/DollarToEuroConverter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/DollarToEuroConverter.cpp > CMakeFiles/test.dir/DollarToEuroConverter.cpp.i
 
 CMakeFiles/test.dir/DollarToEuroConverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/DollarToEuroConverter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/DollarToEuroConverter.cpp -o CMakeFiles/test.dir/DollarToEuroConverter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/DollarToEuroConverter.cpp -o CMakeFiles/test.dir/DollarToEuroConverter.cpp.s
 
 CMakeFiles/test.dir/DollarToEuroConverter.cpp.o.requires:
 .PHONY : CMakeFiles/test.dir/DollarToEuroConverter.cpp.o.requires
@@ -143,17 +146,17 @@ CMakeFiles/test.dir/DollarToEuroConverter.cpp.o.provides.build: CMakeFiles/test.
 
 CMakeFiles/test.dir/YenToEuroConverter.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/YenToEuroConverter.cpp.o: ../YenToEuroConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/YenToEuroConverter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/YenToEuroConverter.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/YenToEuroConverter.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/YenToEuroConverter.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/YenToEuroConverter.cpp
 
 CMakeFiles/test.dir/YenToEuroConverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/YenToEuroConverter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/YenToEuroConverter.cpp > CMakeFiles/test.dir/YenToEuroConverter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/YenToEuroConverter.cpp > CMakeFiles/test.dir/YenToEuroConverter.cpp.i
 
 CMakeFiles/test.dir/YenToEuroConverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/YenToEuroConverter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/YenToEuroConverter.cpp -o CMakeFiles/test.dir/YenToEuroConverter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/YenToEuroConverter.cpp -o CMakeFiles/test.dir/YenToEuroConverter.cpp.s
 
 CMakeFiles/test.dir/YenToEuroConverter.cpp.o.requires:
 .PHONY : CMakeFiles/test.dir/YenToEuroConverter.cpp.o.requires
@@ -166,17 +169,17 @@ CMakeFiles/test.dir/YenToEuroConverter.cpp.o.provides.build: CMakeFiles/test.dir
 
 CMakeFiles/test.dir/UnitConverter.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/UnitConverter.cpp.o: ../UnitConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/UnitConverter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/UnitConverter.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/UnitConverter.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/UnitConverter.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.cpp
 
 CMakeFiles/test.dir/UnitConverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/UnitConverter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/UnitConverter.cpp > CMakeFiles/test.dir/UnitConverter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.cpp > CMakeFiles/test.dir/UnitConverter.cpp.i
 
 CMakeFiles/test.dir/UnitConverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/UnitConverter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/UnitConverter.cpp -o CMakeFiles/test.dir/UnitConverter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.cpp -o CMakeFiles/test.dir/UnitConverter.cpp.s
 
 CMakeFiles/test.dir/UnitConverter.cpp.o.requires:
 .PHONY : CMakeFiles/test.dir/UnitConverter.cpp.o.requires
@@ -189,17 +192,17 @@ CMakeFiles/test.dir/UnitConverter.cpp.o.provides.build: CMakeFiles/test.dir/Unit
 
 CMakeFiles/test.dir/TempConverter.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/TempConverter.cpp.o: ../TempConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/TempConverter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/TempConverter.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/TempConverter.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/TempConverter.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/TempConverter.cpp
 
 CMakeFiles/test.dir/TempConverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/TempConverter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/TempConverter.cpp > CMakeFiles/test.dir/TempConverter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/TempConverter.cpp > CMakeFiles/test.dir/TempConverter.cpp.i
 
 CMakeFiles/test.dir/TempConverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/TempConverter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/TempConverter.cpp -o CMakeFiles/test.dir/TempConverter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/TempConverter.cpp -o CMakeFiles/test.dir/TempConverter.cpp.s
 
 CMakeFiles/test.dir/TempConverter.cpp.o.requires:
 .PHONY : CMakeFiles/test.dir/TempConverter.cpp.o.requires
@@ -212,17 +215,17 @@ CMakeFiles/test.dir/TempConverter.cpp.o.provides.build: CMakeFiles/test.dir/Temp
 
 CMakeFiles/test.dir/CurrencyConverter.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/CurrencyConverter.cpp.o: ../CurrencyConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/CurrencyConverter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/CurrencyConverter.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CurrencyConverter.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/CurrencyConverter.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CurrencyConverter.cpp
 
 CMakeFiles/test.dir/CurrencyConverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/CurrencyConverter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CurrencyConverter.cpp > CMakeFiles/test.dir/CurrencyConverter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CurrencyConverter.cpp > CMakeFiles/test.dir/CurrencyConverter.cpp.i
 
 CMakeFiles/test.dir/CurrencyConverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/CurrencyConverter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/CurrencyConverter.cpp -o CMakeFiles/test.dir/CurrencyConverter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CurrencyConverter.cpp -o CMakeFiles/test.dir/CurrencyConverter.cpp.s
 
 CMakeFiles/test.dir/CurrencyConverter.cpp.o.requires:
 .PHONY : CMakeFiles/test.dir/CurrencyConverter.cpp.o.requires
@@ -235,17 +238,17 @@ CMakeFiles/test.dir/CurrencyConverter.cpp.o.provides.build: CMakeFiles/test.dir/
 
 CMakeFiles/test.dir/GoldToEuroConverter.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/GoldToEuroConverter.cpp.o: ../GoldToEuroConverter.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_9)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/GoldToEuroConverter.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/GoldToEuroConverter.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/GoldToEuroConverter.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/GoldToEuroConverter.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/GoldToEuroConverter.cpp
 
 CMakeFiles/test.dir/GoldToEuroConverter.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/GoldToEuroConverter.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/GoldToEuroConverter.cpp > CMakeFiles/test.dir/GoldToEuroConverter.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/GoldToEuroConverter.cpp > CMakeFiles/test.dir/GoldToEuroConverter.cpp.i
 
 CMakeFiles/test.dir/GoldToEuroConverter.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/GoldToEuroConverter.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/GoldToEuroConverter.cpp -o CMakeFiles/test.dir/GoldToEuroConverter.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/GoldToEuroConverter.cpp -o CMakeFiles/test.dir/GoldToEuroConverter.cpp.s
 
 CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.requires:
 .PHONY : CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.requires
@@ -258,17 +261,17 @@ CMakeFiles/test.dir/GoldToEuroConverter.cpp.o.provides.build: CMakeFiles/test.di
 
 CMakeFiles/test.dir/ConverterFactory.cpp.o: CMakeFiles/test.dir/flags.make
 CMakeFiles/test.dir/ConverterFactory.cpp.o: ../ConverterFactory.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/test.dir/ConverterFactory.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/ConverterFactory.cpp.o -c /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/ConverterFactory.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/test.dir/ConverterFactory.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/ConverterFactory.cpp
 
 CMakeFiles/test.dir/ConverterFactory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/ConverterFactory.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/ConverterFactory.cpp > CMakeFiles/test.dir/ConverterFactory.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/ConverterFactory.cpp > CMakeFiles/test.dir/ConverterFactory.cpp.i
 
 CMakeFiles/test.dir/ConverterFactory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/ConverterFactory.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/ConverterFactory.cpp -o CMakeFiles/test.dir/ConverterFactory.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/ConverterFactory.cpp -o CMakeFiles/test.dir/ConverterFactory.cpp.s
 
 CMakeFiles/test.dir/ConverterFactory.cpp.o.requires:
 .PHONY : CMakeFiles/test.dir/ConverterFactory.cpp.o.requires
@@ -331,6 +334,6 @@ CMakeFiles/test.dir/clean:
 .PHONY : CMakeFiles/test.dir/clean
 
 CMakeFiles/test.dir/depend:
-	cd /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15 /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15 /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build /home/freddy/Documents/Studium/B03/softwar_eng/software-engineering-ws15/build/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/build/CMakeFiles/test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/test.dir/depend
 

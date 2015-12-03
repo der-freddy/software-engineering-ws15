@@ -24,3 +24,8 @@ void GoldToEuroConverter::print() const
 {
   std::cout << toString();
 }
+
+std::shared_ptr<UnitConverter> GoldToEuroConverter::clone()
+{
+	return std::make_shared<GoldToEuroConverter>();
+}

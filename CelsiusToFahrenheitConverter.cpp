@@ -1,24 +1,30 @@
 #include "CelsiusToFahrenheitConverter.hpp"
 
-	//Constructor
-	CelsiusToFahrenheitConverter::CelsiusToFahrenheitConverter()
-	{}
-	CelsiusToFahrenheitConverter::~CelsiusToFahrenheitConverter()
-	{}
+//Constructor
+CelsiusToFahrenheitConverter::CelsiusToFahrenheitConverter()
+{}
+CelsiusToFahrenheitConverter::~CelsiusToFahrenheitConverter()
+{}
 
-	double CelsiusToFahrenheitConverter::convert(double inValue)
-	{
-		double tmp = (inValue*1.8)+32;
+double CelsiusToFahrenheitConverter::convert(double inValue)
+{
+	double tmp = (inValue*1.8)+32;
 
-		return (double)((int) (tmp*10))/10;
+	return (double)((int) (tmp*10))/10;
 
-	}
+}
 
-	std::string CelsiusToFahrenheitConverter::toString() const
-	{
-		return "Celsius To Fahrenheit Converter";
-	}
-    void CelsiusToFahrenheitConverter::print() const
-    {
-    	std::cout << toString();
-    }
+std::string CelsiusToFahrenheitConverter::toString() const
+{
+	return "Celsius To Fahrenheit Converter";
+}
+
+void CelsiusToFahrenheitConverter::print() const
+{
+	std::cout << toString();
+}
+
+std::shared_ptr<UnitConverter> CelsiusToFahrenheitConverter::clone()
+{
+	return std::make_shared<CelsiusToFahrenheitConverter>();
+}

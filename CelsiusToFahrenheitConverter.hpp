@@ -15,6 +15,7 @@ class CelsiusToFahrenheitConverter : public TempConverter
 	    std::string toString() const override;
     	void print() const override;
 
+	    std::shared_ptr<UnitConverter> clone();
 };
 
 

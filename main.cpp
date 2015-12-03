@@ -1,3 +1,14 @@
+#include <memory>
+#include <iostream>
+#include <string>
+
+//factory
+#include "ConverterFactory.hpp"
+
+//basic class
+#include "UnitConverter.hpp"
+
+//derived classes
 #include "DollarToEuroConverter.hpp"
 #include "CelsiusToFahrenheitConverter.hpp"
 #include "FahrenheitToCelsiusConverter.hpp"
@@ -5,13 +16,23 @@
 #include "GoldToEuroConverter.hpp"
 #include "tinytest.h"
 
-#include <memory>
-#include <iostream>
-#include <string>
+
+
+std::shared_ptr<ConverterFactory> ConverterFactory::s_instance = nullptr;
+
 
 int main(int argc, char* argv[])
 {
+	//creating the factory
+	auto factory = ConverterFactory::s_instance_method();
 
+	std::string name = "FahrenheitToCelsius";
+
+	auto FaToCeConv_pointer = std::make_shared<FahrenheitToCelsiusConverter>();
+
+	factory->add_object_to_registry(name, FaToCeConv_pointer);
+
+	/*
  	std::string arg1 = argv[1];
 	double arg2 = std::stod(argv[2]);
 
@@ -61,6 +82,6 @@ int main(int argc, char* argv[])
 	std::cout << "ERROR" <<std::endl;
 	}
 
-
+	*/
 	return 0;
 }

@@ -16,7 +16,7 @@ public:
     virtual void print() const = 0;
 
 
-
+    virtual std::shared_ptr<UnitConverter> clone() = 0;
 };
 
 #endif // CURRENCY_CONVERTER

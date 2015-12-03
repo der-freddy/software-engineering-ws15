@@ -8,7 +8,9 @@ CMakeFiles/test.dir/CelsiusToFahrenheitConverter.cpp.o: ../UnitConverter.hpp
 
 CMakeFiles/test.dir/ConverterFactory.cpp.o: ../ConverterFactory.cpp
 CMakeFiles/test.dir/ConverterFactory.cpp.o: ../ConverterFactory.hpp
+CMakeFiles/test.dir/ConverterFactory.cpp.o: ../CurrencyConverter.hpp
 CMakeFiles/test.dir/ConverterFactory.cpp.o: ../UnitConverter.hpp
+CMakeFiles/test.dir/ConverterFactory.cpp.o: ../YenToEuroConverter.hpp
 
 CMakeFiles/test.dir/CurrencyConverter.cpp.o: ../CurrencyConverter.cpp
 CMakeFiles/test.dir/CurrencyConverter.cpp.o: ../CurrencyConverter.hpp
@@ -42,6 +44,7 @@ CMakeFiles/test.dir/YenToEuroConverter.cpp.o: ../YenToEuroConverter.cpp
 CMakeFiles/test.dir/YenToEuroConverter.cpp.o: ../YenToEuroConverter.hpp
 
 CMakeFiles/test.dir/main.cpp.o: ../CelsiusToFahrenheitConverter.hpp
+CMakeFiles/test.dir/main.cpp.o: ../ConverterFactory.hpp
 CMakeFiles/test.dir/main.cpp.o: ../CurrencyConverter.hpp
 CMakeFiles/test.dir/main.cpp.o: ../DollarToEuroConverter.hpp
 CMakeFiles/test.dir/main.cpp.o: ../FahrenheitToCelsiusConverter.hpp
