@@ -1,30 +1,14 @@
 #include "ConverterFactory.hpp"
-#include <memory>
-
 
 ConverterFactory::ConverterFactory()
 {}
 
-std::shared_ptr<UnitConverter> ConverterFactory::create(std::string const& input)
-{
+/*
+	returns the only instance of ConverterFactory: Singleton
+	unique_ptr would fit better, but compiler says no :(
+*/
 
-	auto it = object_registry.find(input);
-  	if(it != object_registry.end())
-    {
-    	return it->second->clone();
-    }
-	
-	/*
-	another try without .find()
-	for(auto const & element : object_registry)
-	{
-
-	}
-	*/
-}
-
-//unique_ptr would fit better
-std::shared_ptr<ConverterFactory> ConverterFactory::s_instance_method()
+std::shared_ptr<ConverterFactory> ConverterFactory::instance()
 {
 	//if there is no instance "behind" s_instance: create one
 	if(!s_instance)
@@ -35,14 +19,84 @@ std::shared_ptr<ConverterFactory> ConverterFactory::s_instance_method()
 	return s_instance;
 }
 
-void ConverterFactory::add_object_to_registry(std::string name, std::shared_ptr<UnitConverter> pointer)
+/*
+	adds an UnitConverter Object to the object_registry map
+	returns true if successfull
+	returns false if the object is already registered
+*/
+bool ConverterFactory::add_object_to_registry(std::string name, std::shared_ptr<UnitConverter> pointer)
 {
-	/*
-		there needs to be some checking, whether the name is already used
-	*/
-	object_registry.insert(std::pair<std::string, std::shared_ptr<UnitConverter>>(name,pointer));
+	//checks whether the object is already registered
+	if(check_registry(name))
+	{
+		return false;
+	}
+	else
+	{
+		//registers the object if there was no equivalent found
+		object_registry.insert(std::pair<std::string, std::shared_ptr<UnitConverter>>(name,pointer));
+		return true;
+	}
 }
 
+/*
+	checks whether the name is already in the registry
+	returns true if it is already registered
+	returns false if there is no entry
+*/
+bool ConverterFactory::check_registry(std::string const & name) const
+{
+	//checks whether the object is registered
+	for(auto const & element : object_registry)
+	{
+		if(element.first == name)
+		{
+			return true;
+		}
+	}
+	return false;
+}
+
+/*
+	returns an UnitConverter object determined by the given name string
+*/
+std::shared_ptr<UnitConverter> ConverterFactory::create(std::string const& name)
+{
+	/*
+	auto it = object_registry.find(name);
+	if(it != object_registry.end())
+	{
+		return it->second->clone();
+	}
+	*/
+
+	for(auto const & element : object_registry)
+	{
+		if(element.first == name)
+		{
+			return element.second->clone();
+		}
+	}
+
+	/*
+	another try without .find()
+	for(auto const & element : object_registry)
+	{
+
+	}
+	*/
+}
+
+std::string ConverterFactory::print() const
+{
+	std::string converters;
+	for(auto const & element : object_registry)
+	{
+		//std::cout << "first: " << element.first << " second: " << element.second->toString() << std::endl;
+		converters += "first: " + element.first + "| second: " + element.second->toString() + "\n";
+	}
+	return converters;
+}
 /*
 
 std::shared_ptr<Shape> SDFLoader::createBox(std::istringstream& textStream)

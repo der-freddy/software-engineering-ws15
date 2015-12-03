@@ -20,21 +20,24 @@
 class ConverterFactory
 {
 	public:
-		//std::shared_ptr<UnitConverter> create();
-
-		//why the f*** can't i call it s_instance >:(
-		static std::shared_ptr<ConverterFactory> s_instance_method();
-
-		std::shared_ptr<UnitConverter> create(std::string const& input);
 
 		//actually needs to be private 
 		ConverterFactory();
 
-		void add_object_to_registry(std::string name, std::shared_ptr<UnitConverter> pointer);
-	
+		//why the f*** can't i call it s_instance >:(
+		static std::shared_ptr<ConverterFactory> instance();
+
+		std::shared_ptr<UnitConverter> create(std::string const& input);
+
+		bool add_object_to_registry(std::string name, std::shared_ptr<UnitConverter> pointer);
+
+		std::string print() const;
+
+		bool check_registry(std::string const & name) const;
+
 	private:
 		//Constructor
-
+		
 		//pointer to the class -> Singleton
 		static std::shared_ptr<ConverterFactory> s_instance;
 
