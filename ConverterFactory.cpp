@@ -58,6 +58,7 @@ bool ConverterFactory::add_object_to_registry(std::string name, std::shared_ptr<
 	returns true if it is already registered
 	returns false if there is no entry
 */
+
 bool ConverterFactory::check_registry(std::string const & name) const
 {
 	//checks whether the object is registered
@@ -74,16 +75,11 @@ bool ConverterFactory::check_registry(std::string const & name) const
 /*
 	returns an UnitConverter object determined by the given name string
 */
+
 std::shared_ptr<UnitConverter> ConverterFactory::create(std::string const& name)
 {
-	/*
-	auto it = object_registry.find(name);
-	if(it != object_registry.end())
-	{
-		return it->second->clone();
-	}
-	*/
 
+	//loops through the registry
 	for(auto const & element : object_registry)
 	{
 		if(element.first == name)
@@ -91,14 +87,6 @@ std::shared_ptr<UnitConverter> ConverterFactory::create(std::string const& name)
 			return element.second->clone();
 		}
 	}
-
-	/*
-	another try without .find()
-	for(auto const & element : object_registry)
-	{
-
-	}
-	*/
 }
 
 std::string ConverterFactory::print() const
@@ -112,13 +100,3 @@ std::string ConverterFactory::print() const
 	return converters;
 }
 /*
-
-std::shared_ptr<Shape> SDFLoader::createBox(std::istringstream& textStream)
-{
-	std::string name,materialName;
-	float x0,y0,z0,x1,y1,z1;
-	textStream >> name >> x0 >> y0 >> z0 >> x1 >> y1 >> z1 >> materialName;
-	//std::cout << name << x0 << y0 << z0 << x1 << y1 << z1 << materialName;
-	return std::make_shared<Box>(glm::vec3(x0,y0,z0),glm::vec3(x1,y1,z1),name,_materials.find(materialName)->second);
-}
-*/

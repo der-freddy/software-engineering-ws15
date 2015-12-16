@@ -35,8 +35,6 @@ class ConverterFactory
 
 	private:
 		//Constructor
-		
-		//actually needs to be private 
 		ConverterFactory();
 		
 		//pointer to the class -> Singleton
