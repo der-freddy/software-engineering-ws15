@@ -3,22 +3,48 @@
 #include <string>
 #include <cmath>
 
-GoldToEuroConverter::GoldToEuroConverter()
-{}
-GoldToEuroConverter::~GoldToEuroConverter()
+//Constructor
+GoldToEuroConverter::GoldToEuroConverter():
+_decConv(nullptr)
 {}
 
-/*In: Gold ounce
- *Out: Euro value of input Euro as of 28.10.15
- */
-double GoldToEuroConverter::convert(double inputGold)
+//Constructior for chaining
+GoldToEuroConverter::GoldToEuroConverter(std::shared_ptr<UnitConverter> converter):
+_decConv(converter)
+{}
+
+/*
+	converts Celsius to Fahrenheit
+	[Euro] = [Gold] * 1067.4
+ 	Gold value as of 28.10.15
+*/
+
+double GoldToEuroConverter::convert(double input)
 {
-  return inputGold*1067.4;
+	//check whether the converter is decorated
+	if(_decConv != nullptr)
+	{
+		//first conversion
+		input = _decConv->convert(input);
+	}
+
+	//do the remaining, second conversion
+	double result = input*1067.4;
+
+	return result;
 }
 
 std::string GoldToEuroConverter::toString() const
 {
-  return "Gold to Euro Converter";
+	std::string output = "Gold to Euro Converter";
+
+	//chechs whether the converter is decorated
+	if(_decConv != nullptr)
+	{
+		output += " with decorator: " + _decConv->toString();
+	}
+
+	return output;
 }
 
 void GoldToEuroConverter::print() const
