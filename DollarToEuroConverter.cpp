@@ -3,12 +3,10 @@
 #include <string>
 
 DollarToEuroConverter::DollarToEuroConverter()
-{
-}
+{}
 
 DollarToEuroConverter::~DollarToEuroConverter()
-{
-}
+{}
 
 /*In: double value of Dollars
  *Out: Euro value of input Dollars as of 9.10.15

@@ -6,15 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CelsiusToFahrenheitConverter.hpp
-string
--
-iostream
--
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/CelsiusToFahrenheitConverter.hpp
 TempConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/TempConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/TempConverter.hpp
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/ConverterFactory.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/ConverterFactory.hpp
 iostream
 -
 memory
@@ -24,45 +20,31 @@ string
 map
 -
 UnitConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.hpp
-YenToEuroConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/YenToEuroConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/UnitConverter.hpp
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
-string
--
-iostream
--
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
 UnitConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/UnitConverter.hpp
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/DollarToEuroConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/DollarToEuroConverter.hpp
 CurrencyConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
 string
 -
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/FahrenheitToCelsiusConverter.hpp
-string
--
-iostream
--
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/FahrenheitToCelsiusConverter.hpp
 TempConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/TempConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/TempConverter.hpp
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/GoldToEuroConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/GoldToEuroConverter.hpp
 CurrencyConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/TempConverter.hpp
-string
--
-iostream
--
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/TempConverter.hpp
 UnitConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/UnitConverter.hpp
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/UnitConverter.hpp
 iostream
 -
 string
@@ -70,11 +52,11 @@ string
 memory
 -
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/YenToEuroConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/YenToEuroConverter.hpp
 CurrencyConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/main.cpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/main.cpp
 memory
 -
 iostream
@@ -82,23 +64,23 @@ iostream
 string
 -
 ConverterFactory.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/ConverterFactory.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/ConverterFactory.hpp
 UnitConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/UnitConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/UnitConverter.hpp
 DollarToEuroConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/DollarToEuroConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/DollarToEuroConverter.hpp
 CelsiusToFahrenheitConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/CelsiusToFahrenheitConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/CelsiusToFahrenheitConverter.hpp
 FahrenheitToCelsiusConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/FahrenheitToCelsiusConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/FahrenheitToCelsiusConverter.hpp
 YenToEuroConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/YenToEuroConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/YenToEuroConverter.hpp
 GoldToEuroConverter.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/GoldToEuroConverter.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/GoldToEuroConverter.hpp
 tinytest.h
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/tinytest.h
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/tinytest.h
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/2_Abgabe/software-engineering-ws15/tinytest.h
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/tinytest.h
 stdlib.h
 -
 stdio.h

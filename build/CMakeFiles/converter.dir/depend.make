@@ -8,9 +8,7 @@ CMakeFiles/converter.dir/CelsiusToFahrenheitConverter.cpp.o: ../UnitConverter.hp
 
 CMakeFiles/converter.dir/ConverterFactory.cpp.o: ../ConverterFactory.cpp
 CMakeFiles/converter.dir/ConverterFactory.cpp.o: ../ConverterFactory.hpp
-CMakeFiles/converter.dir/ConverterFactory.cpp.o: ../CurrencyConverter.hpp
 CMakeFiles/converter.dir/ConverterFactory.cpp.o: ../UnitConverter.hpp
-CMakeFiles/converter.dir/ConverterFactory.cpp.o: ../YenToEuroConverter.hpp
 
 CMakeFiles/converter.dir/CurrencyConverter.cpp.o: ../CurrencyConverter.cpp
 CMakeFiles/converter.dir/CurrencyConverter.cpp.o: ../CurrencyConverter.hpp
