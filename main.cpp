@@ -45,7 +45,6 @@ int main(int argc, char* argv[])
 
 		double value = std::stod(argv[1]);
 
-
 		/*
 			[1] doing converter things
 		*/
