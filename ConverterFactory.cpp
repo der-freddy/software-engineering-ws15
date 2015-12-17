@@ -99,4 +99,3 @@ std::string ConverterFactory::print() const
 	}
 	return converters;
 }
-/*

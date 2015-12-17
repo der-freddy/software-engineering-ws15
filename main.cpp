@@ -1,6 +1,7 @@
 #include <memory>
 #include <iostream>
 #include <string>
+#include <deque>
 
 //factory
 #include "ConverterFactory.hpp"
@@ -14,6 +15,8 @@
 #include "FahrenheitToCelsiusConverter.hpp"
 #include "YenToEuroConverter.hpp"
 #include "GoldToEuroConverter.hpp"
+#include "Command.hpp"
+
 #include "tinytest.h"
 
 //secure that it's a singleton
@@ -23,6 +26,7 @@ ConverterFactory* ConverterFactory::s_instance = nullptr;
 
 int main(int argc, char* argv[])
 {
+
 	/*
 		[0]	creating the factory
 	*/
@@ -48,6 +52,32 @@ int main(int argc, char* argv[])
 	//YenToEuro
 	factory->add_object_to_registry("YenToEuro", std::make_shared<YenToEuroConverter>());
 
+
+	std::deque<Command> command_list;
+
+	std::string input;
+
+	for (std::string line; std::getline(std::cin, input, ' ');)
+	{
+		std::string inputString;
+		std::getline(std::cin,inputString);
+		auto convert = factory->create(input);
+
+		double (UnitConverter::*convertMethod)(double) = NULL;
+		convertMethod = &UnitConverter::convert;
+
+		command_list.push_back(
+			Command{convert, convertMethod, std::stod(inputString)}
+		);
+	}
+
+
+	for(auto&& command : command_list)
+	{
+		command.execute();
+	}
+
+	
 	try
 	{
 		/*
@@ -138,6 +168,6 @@ int main(int argc, char* argv[])
 		*/
 		std::cout << break_string << case_string << break_string << usage_string << break_string << std::endl;
 	}
-	
+
 	return 0;
 }
