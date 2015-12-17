@@ -15,8 +15,15 @@
 #include "FahrenheitToCelsiusConverter.hpp"
 #include "YenToEuroConverter.hpp"
 #include "GoldToEuroConverter.hpp"
+#include "EuroToBritishPoundConverter.hpp"
+
+//inversion decorator
+#include "Inversion.hpp"
+
+//Command pattern for Part 2
 #include "Command.hpp"
 
+//testing
 #include "tinytest.h"
 
 /*
@@ -28,67 +35,149 @@ ConverterFactory* ConverterFactory::s_instance = nullptr;
 
 int main(int argc, char* argv[])
 {
+	/*
+		Adding objects to registry for Part 2
+		Mask:
+		//
+		factory->add_object_to_registry("",std::make_shared<>(Converter));
+	*/
+
+	//initializing the factory
+	auto factory = ConverterFactory::instance();
+
+	//CelsiusToFahrenheitConverter
+	factory->add_object_to_registry("CelsiusToFahrenheit", std::make_shared<CelsiusToFahrenheitConverter>());
+
+	//FahrenheitToCelsius
+	factory->add_object_to_registry("FahrenheitToCelsius", std::make_shared<FahrenheitToCelsiusConverter>());
+	
+	//DollarToEuro
+	factory->add_object_to_registry("DollarToEuro", std::make_shared<DollarToEuroConverter>());
+
+	//EuroToBritishPound
+	factory->add_object_to_registry("EuroToBritishPound", std::make_shared<EuroToBritishPoundConverter>());
+	
+	//GoldToEuro
+	factory->add_object_to_registry("GoldToEuro", std::make_shared<GoldToEuroConverter>());
+	
+	//YenToEuro
+	factory->add_object_to_registry("YenToEuro", std::make_shared<YenToEuroConverter>());
+
 	try
 	{
-		/*
-			[0] retrieving and validating the input
-		*/
-
-		//black box testing
-		if(argc == 1)
-		{
-			throw 1;
-		}
-
-		//check whether the amount of arguments is not right
-		if(argc != 2)
-		{
-			throw 2;
-		}
-
-		double value = std::stod(argv[1]);
-
-		/*
-			[1] doing converter things
-		*/
 		
-		//Celsius to Fahrenheit to Celsius | i know it is nonsense, but it is just for testing
-		auto converter = std::make_shared<CelsiusToFahrenheitConverter>(std::make_shared<FahrenheitToCelsiusConverter>());
 
-		double result = converter->convert(value);
+		/*
+			Part 1.1 Structural Patterns
+		*/
+		std::cout 	<< std::endl << std::endl
+					<< "Part 1.1 Structural Patterns";
 		
 		/*
-			[2] final print
+			Testing converter chaining
+		*/
+		std::cout 	<< std::endl << std::endl
+					<< "Converter chaining"
+					<< std::endl << std::endl;
+
+		//Converting from Yen to Euro to Britsh Pound
+		auto converter_1 = std::make_shared<EuroToBritishPoundConverter>(std::make_shared<YenToEuroConverter>());
+
+		double value_1 = 5000.0;
+
+		double result_1 = converter_1->convert(value_1);
+
+		std::cout 	<< "Converting from Yen to Euro to Britsh Pound"
+					<< std::endl
+					<< "Value: " << value_1
+					<< std::endl
+					<< converter_1->toString()
+					<< std::endl
+					<< "Result: " << result_1
+					<< std::endl;
+
+		/*
+			Testing the inversion Decorator
 		*/
 
-		std::cout 	<< "Conversion: " 	<< converter->toString() 	<< std::endl
-					<< "Value: " 		<< value 					<< std::endl 
-					<< "Result: " 		<< result 					<< std::endl;
+		std::cout 	<< std::endl << std::endl
+					<< "Inversion Decorator"
+					<< std::endl << std::endl;
 
+		//Converting from Euro to British Pound
+		auto converter_2 = std::make_shared<EuroToBritishPoundConverter>();
+
+		double value_2 = 42.0;
+
+		double result_2 = converter_2->convert(value_2);
+
+		std::cout 	<< "Converting from Euro to British Pound"
+					<< std::endl
+					<< "Value: " << value_2
+					<< std::endl
+					<< converter_2->toString()
+					<< std::endl
+					<< "Result: " << result_2
+					<< std::endl;
+
+		//Converting from British Pound to Euro via Inversion
+		auto converter_3 = std::make_shared<Inversion>(std::make_shared<EuroToBritishPoundConverter>());
+
+		double value_3 = result_2;
+
+		double result_3 = converter_3->convert(value_3);
+
+		std::cout 	<< "Converting from British Pound to Euro via Inversion"
+					<< std::endl
+					<< "Value: " << value_3
+					<< std::endl
+					<< converter_3->toString()
+					<< std::endl
+					<< "Result: " << result_3
+					<< std::endl;
+
+		/*
+			Part 2 Behavioural Patterns
+		*/
+		std::cout 	<< std::endl << std::endl
+					<< "Part 2 Behavioural Patterns"
+					<< std::endl << std::endl
+					<< "Choose from these converters and type a value.\nPress ENTER after each Converter+Value.\nPress strg+d when finished."
+					<< std::endl << std::endl
+					<< factory->print()
+					<< std::endl << std::endl
+					<< "<Command> <Value>"
+					<< std::endl;
+
+		//initializing the used deque
 		std::deque<Command> command_list;
 
 		std::string input;
 
-		for (std::string line; std::getline(std::cin, input, ' ');)
+		//loop provided by the worksheet
+		//adapted with some conversion
+		for(std::string line; std::getline(std::cin, input, ' ');)
 		{
 			std::string inputString;
 			std::getline(std::cin,inputString);
+
+			//wanted converter
 			auto convert = factory->create(input);
 
-			double (UnitConverter::*convertMethod)(double) = NULL;
+			double(UnitConverter::*convertMethod)(double) = NULL;
+			
+			//reference to the method
 			convertMethod = &UnitConverter::convert;
 
-			command_list.push_back(
-				Command{convert, convertMethod, std::stod(inputString)}
-			);
+			//add the reference to the deque
+			command_list.push_back(Command{convert, convertMethod, std::stod(inputString)});
 		}
 
-
+		//loop though the deque
 		for(auto&& command : command_list)
 		{
 			command.execute();
 		}
-
 	}
 	catch(int exception)
 	{

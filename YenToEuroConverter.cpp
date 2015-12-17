@@ -26,7 +26,7 @@ double YenToEuroConverter::convert(double input)
 	}
 
 	//do the remaining, second conversion
-	double result = input*0.7517*(1/100);
+	double result = input * 0.7517 * (1.0/100.0);
 
 	return result;
 }

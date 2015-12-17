@@ -282,6 +282,98 @@ CMakeFiles/converter.dir/ConverterFactory.cpp.o.provides: CMakeFiles/converter.d
 
 CMakeFiles/converter.dir/ConverterFactory.cpp.o.provides.build: CMakeFiles/converter.dir/ConverterFactory.cpp.o
 
+CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o: CMakeFiles/converter.dir/flags.make
+CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o: ../EuroToBritishPoundConverter.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/EuroToBritishPoundConverter.cpp
+
+CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/EuroToBritishPoundConverter.cpp > CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.i
+
+CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/EuroToBritishPoundConverter.cpp -o CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.s
+
+CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o.requires:
+.PHONY : CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o.requires
+
+CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o.provides: CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o.requires
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o.provides.build
+.PHONY : CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o.provides
+
+CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o.provides.build: CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o
+
+CMakeFiles/converter.dir/Decorator.cpp.o: CMakeFiles/converter.dir/flags.make
+CMakeFiles/converter.dir/Decorator.cpp.o: ../Decorator.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/converter.dir/Decorator.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/converter.dir/Decorator.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Decorator.cpp
+
+CMakeFiles/converter.dir/Decorator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/converter.dir/Decorator.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Decorator.cpp > CMakeFiles/converter.dir/Decorator.cpp.i
+
+CMakeFiles/converter.dir/Decorator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/converter.dir/Decorator.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Decorator.cpp -o CMakeFiles/converter.dir/Decorator.cpp.s
+
+CMakeFiles/converter.dir/Decorator.cpp.o.requires:
+.PHONY : CMakeFiles/converter.dir/Decorator.cpp.o.requires
+
+CMakeFiles/converter.dir/Decorator.cpp.o.provides: CMakeFiles/converter.dir/Decorator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Decorator.cpp.o.provides.build
+.PHONY : CMakeFiles/converter.dir/Decorator.cpp.o.provides
+
+CMakeFiles/converter.dir/Decorator.cpp.o.provides.build: CMakeFiles/converter.dir/Decorator.cpp.o
+
+CMakeFiles/converter.dir/Inversion.cpp.o: CMakeFiles/converter.dir/flags.make
+CMakeFiles/converter.dir/Inversion.cpp.o: ../Inversion.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/converter.dir/Inversion.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/converter.dir/Inversion.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Inversion.cpp
+
+CMakeFiles/converter.dir/Inversion.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/converter.dir/Inversion.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Inversion.cpp > CMakeFiles/converter.dir/Inversion.cpp.i
+
+CMakeFiles/converter.dir/Inversion.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/converter.dir/Inversion.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Inversion.cpp -o CMakeFiles/converter.dir/Inversion.cpp.s
+
+CMakeFiles/converter.dir/Inversion.cpp.o.requires:
+.PHONY : CMakeFiles/converter.dir/Inversion.cpp.o.requires
+
+CMakeFiles/converter.dir/Inversion.cpp.o.provides: CMakeFiles/converter.dir/Inversion.cpp.o.requires
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Inversion.cpp.o.provides.build
+.PHONY : CMakeFiles/converter.dir/Inversion.cpp.o.provides
+
+CMakeFiles/converter.dir/Inversion.cpp.o.provides.build: CMakeFiles/converter.dir/Inversion.cpp.o
+
+CMakeFiles/converter.dir/Command.cpp.o: CMakeFiles/converter.dir/flags.make
+CMakeFiles/converter.dir/Command.cpp.o: ../Command.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/converter.dir/Command.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/converter.dir/Command.cpp.o -c /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Command.cpp
+
+CMakeFiles/converter.dir/Command.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/converter.dir/Command.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Command.cpp > CMakeFiles/converter.dir/Command.cpp.i
+
+CMakeFiles/converter.dir/Command.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/converter.dir/Command.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Command.cpp -o CMakeFiles/converter.dir/Command.cpp.s
+
+CMakeFiles/converter.dir/Command.cpp.o.requires:
+.PHONY : CMakeFiles/converter.dir/Command.cpp.o.requires
+
+CMakeFiles/converter.dir/Command.cpp.o.provides: CMakeFiles/converter.dir/Command.cpp.o.requires
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Command.cpp.o.provides.build
+.PHONY : CMakeFiles/converter.dir/Command.cpp.o.provides
+
+CMakeFiles/converter.dir/Command.cpp.o.provides.build: CMakeFiles/converter.dir/Command.cpp.o
+
 # Object files for target converter
 converter_OBJECTS = \
 "CMakeFiles/converter.dir/main.cpp.o" \
@@ -293,7 +385,11 @@ converter_OBJECTS = \
 "CMakeFiles/converter.dir/TempConverter.cpp.o" \
 "CMakeFiles/converter.dir/CurrencyConverter.cpp.o" \
 "CMakeFiles/converter.dir/GoldToEuroConverter.cpp.o" \
-"CMakeFiles/converter.dir/ConverterFactory.cpp.o"
+"CMakeFiles/converter.dir/ConverterFactory.cpp.o" \
+"CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o" \
+"CMakeFiles/converter.dir/Decorator.cpp.o" \
+"CMakeFiles/converter.dir/Inversion.cpp.o" \
+"CMakeFiles/converter.dir/Command.cpp.o"
 
 # External object files for target converter
 converter_EXTERNAL_OBJECTS =
@@ -308,6 +404,10 @@ converter: CMakeFiles/converter.dir/TempConverter.cpp.o
 converter: CMakeFiles/converter.dir/CurrencyConverter.cpp.o
 converter: CMakeFiles/converter.dir/GoldToEuroConverter.cpp.o
 converter: CMakeFiles/converter.dir/ConverterFactory.cpp.o
+converter: CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o
+converter: CMakeFiles/converter.dir/Decorator.cpp.o
+converter: CMakeFiles/converter.dir/Inversion.cpp.o
+converter: CMakeFiles/converter.dir/Command.cpp.o
 converter: CMakeFiles/converter.dir/build.make
 converter: CMakeFiles/converter.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable converter"
@@ -327,6 +427,10 @@ CMakeFiles/converter.dir/requires: CMakeFiles/converter.dir/TempConverter.cpp.o.
 CMakeFiles/converter.dir/requires: CMakeFiles/converter.dir/CurrencyConverter.cpp.o.requires
 CMakeFiles/converter.dir/requires: CMakeFiles/converter.dir/GoldToEuroConverter.cpp.o.requires
 CMakeFiles/converter.dir/requires: CMakeFiles/converter.dir/ConverterFactory.cpp.o.requires
+CMakeFiles/converter.dir/requires: CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o.requires
+CMakeFiles/converter.dir/requires: CMakeFiles/converter.dir/Decorator.cpp.o.requires
+CMakeFiles/converter.dir/requires: CMakeFiles/converter.dir/Inversion.cpp.o.requires
+CMakeFiles/converter.dir/requires: CMakeFiles/converter.dir/Command.cpp.o.requires
 .PHONY : CMakeFiles/converter.dir/requires
 
 CMakeFiles/converter.dir/clean:

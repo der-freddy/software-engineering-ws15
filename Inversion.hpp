@@ -1,15 +1,17 @@
 #ifndef INVERSION
 #define INVERSION
 
+#include "Decorator.hpp"
+
 class Inversion : public Decorator
 {
 	public:
 	Inversion();
 	Inversion(std::shared_ptr<UnitConverter> converter);
 
-	double convert(double inValue) override;
-	std::string toString() const override;
-	void print() const override;
+	double convert(double input);
+	std::string toString() const;
+	void print() const;
 
 	std::shared_ptr<UnitConverter> clone();
 

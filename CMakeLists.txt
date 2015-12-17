@@ -13,4 +13,7 @@ add_executable(converter main.cpp
 						CurrencyConverter.cpp
 						GoldToEuroConverter.cpp
 						ConverterFactory.cpp
-						EuroToBritishPoundConverter.cpp)
+						EuroToBritishPoundConverter.cpp
+						Decorator.cpp
+						Inversion.cpp
+						Command.cpp)

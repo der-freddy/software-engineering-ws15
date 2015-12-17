@@ -1,8 +1,5 @@
 #include "GoldToEuroConverter.hpp"
 
-#include <string>
-#include <cmath>
-
 //Constructor
 GoldToEuroConverter::GoldToEuroConverter():
 _decConv(nullptr)

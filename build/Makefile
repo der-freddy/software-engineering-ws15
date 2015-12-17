@@ -138,6 +138,30 @@ CelsiusToFahrenheitConverter.cpp.s:
 	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/CelsiusToFahrenheitConverter.cpp.s
 .PHONY : CelsiusToFahrenheitConverter.cpp.s
 
+Command.o: Command.cpp.o
+.PHONY : Command.o
+
+# target to build an object file
+Command.cpp.o:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Command.cpp.o
+.PHONY : Command.cpp.o
+
+Command.i: Command.cpp.i
+.PHONY : Command.i
+
+# target to preprocess a source file
+Command.cpp.i:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Command.cpp.i
+.PHONY : Command.cpp.i
+
+Command.s: Command.cpp.s
+.PHONY : Command.s
+
+# target to generate assembly for a file
+Command.cpp.s:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Command.cpp.s
+.PHONY : Command.cpp.s
+
 ConverterFactory.o: ConverterFactory.cpp.o
 .PHONY : ConverterFactory.o
 
@@ -186,6 +210,30 @@ CurrencyConverter.cpp.s:
 	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/CurrencyConverter.cpp.s
 .PHONY : CurrencyConverter.cpp.s
 
+Decorator.o: Decorator.cpp.o
+.PHONY : Decorator.o
+
+# target to build an object file
+Decorator.cpp.o:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Decorator.cpp.o
+.PHONY : Decorator.cpp.o
+
+Decorator.i: Decorator.cpp.i
+.PHONY : Decorator.i
+
+# target to preprocess a source file
+Decorator.cpp.i:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Decorator.cpp.i
+.PHONY : Decorator.cpp.i
+
+Decorator.s: Decorator.cpp.s
+.PHONY : Decorator.s
+
+# target to generate assembly for a file
+Decorator.cpp.s:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Decorator.cpp.s
+.PHONY : Decorator.cpp.s
+
 DollarToEuroConverter.o: DollarToEuroConverter.cpp.o
 .PHONY : DollarToEuroConverter.o
 
@@ -209,6 +257,30 @@ DollarToEuroConverter.s: DollarToEuroConverter.cpp.s
 DollarToEuroConverter.cpp.s:
 	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/DollarToEuroConverter.cpp.s
 .PHONY : DollarToEuroConverter.cpp.s
+
+EuroToBritishPoundConverter.o: EuroToBritishPoundConverter.cpp.o
+.PHONY : EuroToBritishPoundConverter.o
+
+# target to build an object file
+EuroToBritishPoundConverter.cpp.o:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.o
+.PHONY : EuroToBritishPoundConverter.cpp.o
+
+EuroToBritishPoundConverter.i: EuroToBritishPoundConverter.cpp.i
+.PHONY : EuroToBritishPoundConverter.i
+
+# target to preprocess a source file
+EuroToBritishPoundConverter.cpp.i:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.i
+.PHONY : EuroToBritishPoundConverter.cpp.i
+
+EuroToBritishPoundConverter.s: EuroToBritishPoundConverter.cpp.s
+.PHONY : EuroToBritishPoundConverter.s
+
+# target to generate assembly for a file
+EuroToBritishPoundConverter.cpp.s:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/EuroToBritishPoundConverter.cpp.s
+.PHONY : EuroToBritishPoundConverter.cpp.s
 
 FahrenheitToCelsiusConverter.o: FahrenheitToCelsiusConverter.cpp.o
 .PHONY : FahrenheitToCelsiusConverter.o
@@ -257,6 +329,30 @@ GoldToEuroConverter.s: GoldToEuroConverter.cpp.s
 GoldToEuroConverter.cpp.s:
 	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/GoldToEuroConverter.cpp.s
 .PHONY : GoldToEuroConverter.cpp.s
+
+Inversion.o: Inversion.cpp.o
+.PHONY : Inversion.o
+
+# target to build an object file
+Inversion.cpp.o:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Inversion.cpp.o
+.PHONY : Inversion.cpp.o
+
+Inversion.i: Inversion.cpp.i
+.PHONY : Inversion.i
+
+# target to preprocess a source file
+Inversion.cpp.i:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Inversion.cpp.i
+.PHONY : Inversion.cpp.i
+
+Inversion.s: Inversion.cpp.s
+.PHONY : Inversion.s
+
+# target to generate assembly for a file
+Inversion.cpp.s:
+	$(MAKE) -f CMakeFiles/converter.dir/build.make CMakeFiles/converter.dir/Inversion.cpp.s
+.PHONY : Inversion.cpp.s
 
 TempConverter.o: TempConverter.cpp.o
 .PHONY : TempConverter.o
@@ -366,21 +462,33 @@ help:
 	@echo "... CelsiusToFahrenheitConverter.o"
 	@echo "... CelsiusToFahrenheitConverter.i"
 	@echo "... CelsiusToFahrenheitConverter.s"
+	@echo "... Command.o"
+	@echo "... Command.i"
+	@echo "... Command.s"
 	@echo "... ConverterFactory.o"
 	@echo "... ConverterFactory.i"
 	@echo "... ConverterFactory.s"
 	@echo "... CurrencyConverter.o"
 	@echo "... CurrencyConverter.i"
 	@echo "... CurrencyConverter.s"
+	@echo "... Decorator.o"
+	@echo "... Decorator.i"
+	@echo "... Decorator.s"
 	@echo "... DollarToEuroConverter.o"
 	@echo "... DollarToEuroConverter.i"
 	@echo "... DollarToEuroConverter.s"
+	@echo "... EuroToBritishPoundConverter.o"
+	@echo "... EuroToBritishPoundConverter.i"
+	@echo "... EuroToBritishPoundConverter.s"
 	@echo "... FahrenheitToCelsiusConverter.o"
 	@echo "... FahrenheitToCelsiusConverter.i"
 	@echo "... FahrenheitToCelsiusConverter.s"
 	@echo "... GoldToEuroConverter.o"
 	@echo "... GoldToEuroConverter.i"
 	@echo "... GoldToEuroConverter.s"
+	@echo "... Inversion.o"
+	@echo "... Inversion.i"
+	@echo "... Inversion.s"
 	@echo "... TempConverter.o"
 	@echo "... TempConverter.i"
 	@echo "... TempConverter.s"

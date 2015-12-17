@@ -7,22 +7,32 @@ _decConv{nullptr}
 
 Inversion::Inversion(std::shared_ptr<UnitConverter> converter)
 {
-	//there need to be some typesafety features
+	//some typesafety
+	if((converter->toString() == "Fahrenheit To Celsius Converter") || (converter->toString() == "Celsius To Fahrenheit Converter" ))
+	{
+		_decConv = nullptr;
+	}
+
 	_decConv = converter;
 }
 
-ConverterPtr Inversion::clone() const {
+std::shared_ptr<UnitConverter> Inversion::clone()
+{
 	return std::make_shared<Inversion>();
 }
 
-double Inversion::convert(double inValue)
+double Inversion::convert(double input)
 {
 	double result;
 
 	if(_decConv != nullptr)
 	{
-		inValue_ = inValue;
-		result = inValue / pdConverter_->convert(1.0);
+		result = input / _decConv->convert(1.0);
+	}
+	else
+	{
+		//if there is no decorator
+		result = input;
 	}
 
 	return result;
@@ -30,7 +40,15 @@ double Inversion::convert(double inValue)
 
 std::string Inversion::toString() const
 {
-	return "Inversion has inverted ";
+	std::string output =  "Inversion: Inverts the given decorator.";
+
+	//checks whether the converter is decorated
+	if(_decConv != nullptr)
+	{
+		output += " Given decorator: " + _decConv->toString();
+	}
+
+	return output;
 }
 
 void Inversion::print() const

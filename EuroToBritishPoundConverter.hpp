@@ -7,9 +7,9 @@ class EuroToBritishPoundConverter : public CurrencyConverter
 {
 	public:
 	//Constructor
-	CelsiusToFahrenheitConverter();
+	EuroToBritishPoundConverter();
 	//Constructior for chaining
-	CelsiusToFahrenheitConverter(std::shared_ptr<UnitConverter> converter);
+	EuroToBritishPoundConverter(std::shared_ptr<UnitConverter> converter);
 
     double convert(double currency);
     std::string toString() const;
