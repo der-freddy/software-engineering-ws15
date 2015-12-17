@@ -1,26 +1,47 @@
 #include "YenToEuroConverter.hpp"
 
-#include <string>
-#include <cmath>
-
-YenToEuroConverter::YenToEuroConverter()
+//Constructor
+YenToEuroConverter::YenToEuroConverter():
+_decConv(nullptr)
 {}
 
-YenToEuroConverter::~YenToEuroConverter()
+//Constructior for chaining
+YenToEuroConverter::YenToEuroConverter(std::shared_ptr<UnitConverter> converter):
+_decConv(converter)
 {}
 
-
-/*In: double value of Yen
- *Out: Euro value of input yen as of 28.10.15
+/*
+	converts yen to euro
+	
+	[Euro] = [Yen] * 0.7517 * 1/100
  */
-double YenToEuroConverter::convert(double inputYen)
+
+double YenToEuroConverter::convert(double input)
 {
-	return inputYen*0.7517*pow(10,-2);
+	//check whether the converter is decorated
+	if(_decConv != nullptr)
+	{
+		//first conversion
+		input = _decConv->convert(input);
+	}
+
+	//do the remaining, second conversion
+	double result = input*0.7517*(1/100);
+
+	return result;
 }
 
 std::string YenToEuroConverter::toString() const
 {
-	return "Yen to Euro Converter";
+	std::string output = "Yen to Euro Converter";
+
+	//chechs whether the converter is decorated
+	if(_decConv != nullptr)
+	{
+		output += " with decorator: " + _decConv->toString();
+	}
+
+	return output;
 }
 
 void YenToEuroConverter::print() const
