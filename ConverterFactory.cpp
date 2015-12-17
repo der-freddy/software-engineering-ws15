@@ -95,7 +95,7 @@ std::string ConverterFactory::print() const
 	for(auto const & element : object_registry)
 	{
 		//std::cout << "first: " << element.first << " second: " << element.second->toString() << std::endl;
-		converters += "first: " + element.first + "| second: " + element.second->toString() + "\n";
+		converters += "Command: " + element.first + "\nConverter: " + element.second->toString() + "\n\n";
 	}
 	return converters;
 }

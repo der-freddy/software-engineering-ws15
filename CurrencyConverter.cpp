@@ -2,5 +2,6 @@
 
 CurrencyConverter::CurrencyConverter()
 {}
+
 CurrencyConverter::~CurrencyConverter()
 {}

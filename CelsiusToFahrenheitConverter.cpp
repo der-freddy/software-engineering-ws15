@@ -1,22 +1,46 @@
 #include "CelsiusToFahrenheitConverter.hpp"
 
 //Constructor
-CelsiusToFahrenheitConverter::CelsiusToFahrenheitConverter()
-{}
-CelsiusToFahrenheitConverter::~CelsiusToFahrenheitConverter()
+CelsiusToFahrenheitConverter::CelsiusToFahrenheitConverter():
+_decConv(nullptr)
 {}
 
-double CelsiusToFahrenheitConverter::convert(double inValue)
+//Constructior for chaining
+CelsiusToFahrenheitConverter::CelsiusToFahrenheitConverter(std::shared_ptr<UnitConverter> converter):
+_decConv(converter)
+{}
+
+/*
+	converts Celsius to Fahrenheit
+	[°F] = 9/5 * [°C] + 32
+*/
+
+double CelsiusToFahrenheitConverter::convert(double input)
 {
-	double tmp = (inValue*1.8)+32;
+	//check whether the converter is decorated
+	if(_decConv != nullptr)
+	{
+		//first conversion
+		input = _decConv->convert(input);
+	}
 
-	return (double)((int) (tmp*10))/10;
+	//do the remaining, second conversion
+	double result = (9.0/5.0) * input + 32;
 
+	return (double)((int) (result*10))/10;
 }
 
 std::string CelsiusToFahrenheitConverter::toString() const
 {
-	return "Celsius To Fahrenheit Converter";
+	std::string output = "Celsius To Fahrenheit Converter";
+
+	//checks whether the converter is decorated
+	if(_decConv != nullptr)
+	{
+		output += " with decorator: " + _decConv->toString();
+	}
+
+	return output;
 }
 
 void CelsiusToFahrenheitConverter::print() const
@@ -25,6 +49,20 @@ void CelsiusToFahrenheitConverter::print() const
 }
 
 std::shared_ptr<UnitConverter> CelsiusToFahrenheitConverter::clone()
-{
+{	
+	/*
+	Does not work the way i want it to...
+
+	//chechs whether the converter is decorated
+	if(_decConv != nullptr)
+	{
+		return std::make_shared<CelsiusToFahrenheitConverter>(std::make_shared<UnitConverter>);
+	}
+	else
+	{
+		return std::make_shared<CelsiusToFahrenheitConverter>();
+	}
+	*/
+
 	return std::make_shared<CelsiusToFahrenheitConverter>();
 }

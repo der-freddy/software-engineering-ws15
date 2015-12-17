@@ -2,18 +2,24 @@
 #define DOLLARTOEUROCONVERTER_H
 
 #include "CurrencyConverter.hpp"
-#include <string>
 
 class DollarToEuroConverter : public CurrencyConverter
 {
-  public:
-    DollarToEuroConverter();
-    ~DollarToEuroConverter();
-    double convert(double inDollars);
-    std::string toString() const;
-    void print() const;
+	public:
+	//Constructor
+	DollarToEuroConverter();
+	//Constructior for chaining
+	DollarToEuroConverter(std::shared_ptr<UnitConverter> converter);
 
-    std::shared_ptr<UnitConverter> clone();
+	double convert(double inDollars);
+	std::string toString() const;
+	void print() const;
+
+	std::shared_ptr<UnitConverter> clone();
+
+	private:
+	//decorated Converter
+	std::shared_ptr<UnitConverter> _decConv;
 };
 
 #endif // DOLLARTOEUROCONVERTER_H

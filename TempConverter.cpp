@@ -2,7 +2,6 @@
 
 TempConverter::TempConverter()
 {}
+
 TempConverter::~TempConverter()
 {}
-
-
