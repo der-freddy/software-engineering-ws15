@@ -38,7 +38,7 @@ std::string GoldToEuroConverter::toString() const
 {
 	std::string output = "Gold to Euro Converter";
 
-	//chechs whether the converter is decorated
+	//checks whether the converter is decorated
 	if(_decConv != nullptr)
 	{
 		output += " with decorator: " + _decConv->toString();
