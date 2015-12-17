@@ -1,6 +1,7 @@
 #include <memory>
 #include <iostream>
 #include <string>
+#include <deque>
 
 //converter factory
 #include "ConverterFactory.hpp"
@@ -14,6 +15,8 @@
 #include "FahrenheitToCelsiusConverter.hpp"
 #include "YenToEuroConverter.hpp"
 #include "GoldToEuroConverter.hpp"
+#include "Command.hpp"
+
 #include "tinytest.h"
 
 /*
@@ -62,6 +65,30 @@ int main(int argc, char* argv[])
 					<< "Value: " 		<< value 					<< std::endl 
 					<< "Result: " 		<< result 					<< std::endl;
 
+		std::deque<Command> command_list;
+
+		std::string input;
+
+		for (std::string line; std::getline(std::cin, input, ' ');)
+		{
+			std::string inputString;
+			std::getline(std::cin,inputString);
+			auto convert = factory->create(input);
+
+			double (UnitConverter::*convertMethod)(double) = NULL;
+			convertMethod = &UnitConverter::convert;
+
+			command_list.push_back(
+				Command{convert, convertMethod, std::stod(inputString)}
+			);
+		}
+
+
+		for(auto&& command : command_list)
+		{
+			command.execute();
+		}
+
 	}
 	catch(int exception)
 	{
@@ -100,6 +127,6 @@ int main(int argc, char* argv[])
 
 		std::cout << break_string << case_string << usage_string << break_string << explanation_string << std::endl;
 	}
-	
+
 	return 0;
 }
