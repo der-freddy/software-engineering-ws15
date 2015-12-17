@@ -2,6 +2,7 @@
 
 #include <string>
 #include <cmath>
+
 GoldToEuroConverter::GoldToEuroConverter()
 {}
 GoldToEuroConverter::~GoldToEuroConverter()

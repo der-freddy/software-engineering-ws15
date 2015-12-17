@@ -14,9 +14,6 @@
 //basic class
 #include "UnitConverter.hpp"
 
-//derived classes
-#include "YenToEuroConverter.hpp"
-
 class ConverterFactory
 {
 	public:
