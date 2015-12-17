@@ -1,7 +1,5 @@
 #ifndef FtoC
 #define FtoC
-#include <string>
-#include <iostream>
 #include "TempConverter.hpp"
 
 class FahrenheitToCelsiusConverter : public TempConverter
@@ -19,9 +17,8 @@ class FahrenheitToCelsiusConverter : public TempConverter
 		std::shared_ptr<UnitConverter> clone();
 
 	private:
-		//decoratedConverter
+		//decorated Converter
 		std::shared_ptr<UnitConverter> _decConv;
 };
-
 
 #endif
