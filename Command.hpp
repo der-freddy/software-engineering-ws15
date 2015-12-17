@@ -30,27 +30,4 @@ private:
 
 };
 
-/*
-class Command {
-
-public:
-
-	
-	Command(DollarToEuroConverter* object, Method method, double param ):
-	
-	m_object_(object), m_method_(method), m_param_(param) { }
-	
-	void execute() const
-	{	
-		std::cout << "Convert " << m_param_ << " to "
-			<< (m_object_->*m_method_)(m_param_) << std::endl;
-	}
-
-private:
-	DollarToEuroConverter* m_object_;
-	Method m_method_;
-	double m_param_;
-
-};
-*/
 #endif
