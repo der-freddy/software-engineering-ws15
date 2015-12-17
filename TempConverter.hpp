@@ -8,6 +8,9 @@ class TempConverter : public UnitConverter
 public:
 	//Constructor
 	TempConverter();
+
+	~TempConverter();
+
 };
 
 #endif // TEMP_CONVERTER

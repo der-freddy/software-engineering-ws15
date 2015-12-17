@@ -17,12 +17,11 @@ _decConv(converter)
 
 double FahrenheitToCelsiusConverter::convert(double input)
 {
-
 	//check whether the converter is decorated
 	if(_decConv != nullptr)
 	{
 		//first conversion
-		input = _decConv->convert(input)
+		input = _decConv->convert(input);
 	}
 
 	//do the remaining, second conversion

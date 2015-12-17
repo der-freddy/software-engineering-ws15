@@ -8,6 +8,8 @@ class CurrencyConverter : public UnitConverter
 public:
 	//Constructor
 	CurrencyConverter();
+
+	~CurrencyConverter();
 };
 
 #endif // CURRENCY_CONVERTER

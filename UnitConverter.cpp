@@ -2,3 +2,6 @@
 
 UnitConverter::UnitConverter()
 {}
+
+UnitConverter::~UnitConverter()
+{}
