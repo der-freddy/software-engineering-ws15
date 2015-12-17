@@ -24,10 +24,10 @@ double CelsiusToFahrenheitConverter::convert(double input)
 		input = _decConv->convert(input)
 	}
 
+	//do the remaining, second conversion
 	double result = (9.0/5.0) * (input+32);
 
 	return (double)((int) (result*10))/10;
-
 }
 
 std::string CelsiusToFahrenheitConverter::toString() const

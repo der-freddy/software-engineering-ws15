@@ -48,6 +48,13 @@ int main(int argc, char* argv[])
 	//YenToEuro
 	factory->add_object_to_registry("YenToEuro", std::make_shared<YenToEuroConverter>());
 
+	/*
+		Testing for Exercise 5 Part 1.1
+	*/
+	//Celsius to Fahrenheit to Celsius | i know it is nonsense, but it is just for testing
+
+	factory->add_object_to_registry("CelsiusToFahrenheitToCelsius", std::make_shared<CelsiusToFahrenheitConverter>(std::make_shared<FahrenheitToCelsiusConverter>()));
+
 	try
 	{
 		/*
@@ -57,7 +64,7 @@ int main(int argc, char* argv[])
 		//black box testing
 		if(argc == 1)
 		{
-			throw 3;
+			throw 1;
 		}
 
 		std::string converter_name = argv[1];
@@ -66,13 +73,13 @@ int main(int argc, char* argv[])
 		//check whether the amount of arguments is not right
 		if(argc != 3)
 		{
-			throw 1;
+			throw 2;
 		}
 
 		//check whether the requested converter is available
 		if(!factory->check_registry(converter_name))
 		{
-			throw 2;
+			throw 3;
 		}
 
 		//check whether the argument is numeric
@@ -110,25 +117,25 @@ int main(int argc, char* argv[])
 		{
 			case 1:
 			{
-				case_string += "Wrong amount of arguments!\n";
+				case_string += "You need help? Take this!\n";
 				break;
 			}
 
 			case 2:
 			{
-				case_string += "The requested converter is not available!\n";
+				case_string += "Wrong amount of arguments!\n";
 				break;
 			}
 
 			case 3:
 			{
-				case_string += "You need help? Take this!\n";
+				case_string += "The requested converter is not available!\n";
 				break;
 			}
 
 			default:
 			{
-
+				case_string += "Unknown Exception. So sorry!\n"
 				break;
 			}
 		}

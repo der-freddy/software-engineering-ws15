@@ -29,7 +29,6 @@ double FahrenheitToCelsiusConverter::convert(double input)
 	double result = (5.0/9.0) * (input-32);
 
 	return (double)((int) (result*10))/10;
-	
 }
 
 std::string FahrenheitToCelsiusConverter::toString() const
