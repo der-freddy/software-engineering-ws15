@@ -1,24 +1,46 @@
 #include "EuroToBritishPoundConverter.hpp"
 
-#include <string>
-#include <cmath>
-
-EuroToBritishPoundConverter::EuroToBritishPoundConverter()
-{}
-EuroToBritishPoundConverter::~EuroToBritishPoundConverter()
+//Constructor
+EuroToBritishPoundConverter::EuroToBritishPoundConverter():
+_decConv(nullptr)
 {}
 
-/*In: Euro value
- *Out: British Pound value of input Euro as of 17.12.15
- */
-double EuroToBritishPoundConverter::convert(double inputEuro)
+//Constructior for chaining
+EuroToBritishPoundConverter::EuroToBritishPoundConverter(std::shared_ptr<UnitConverter> converter):
+_decConv(converter)
+{}
+
+/*
+	converts Euro to British Pound
+	[British Pound] = [Euro] * 0.72743
+*/
+
+double EuroToBritishPoundConverter::convert(double input)
 {
-  return inputEuro*0.72743;
+	//check whether the converter is decorated
+	if(_decConv != nullptr)
+	{
+		//first conversion
+		input = _decConv->convert(input);
+	}
+
+	//do the remaining, second conversion
+	double result = input * 0.72743;
+
+	return result;
 }
 
 std::string EuroToBritishPoundConverter::toString() const
 {
-  return "Euro to British Pound Converter";
+	std::string output =  "Euro to British Pound Converter";
+
+	//checks whether the converter is decorated
+	if(_decConv != nullptr)
+	{
+		output += " with decorator: " + _decConv->toString();
+	}
+
+	return output;
 }
 
 void EuroToBritishPoundConverter::print() const
