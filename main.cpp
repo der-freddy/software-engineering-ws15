@@ -1,3 +1,6 @@
+//test
+#include "catch.hpp"
+
 #include <memory>
 #include <iostream>
 #include <string>
@@ -32,6 +35,31 @@
 
 //secure it is a singleton
 ConverterFactory* ConverterFactory::s_instance = nullptr;
+
+
+TEST_CASE("Converter Test")
+{	
+	std::vector <unsigned int> v0 (50); /*Creates vector with space for
+	100 Integers*/
+	
+	for ( std::vector <unsigned int >::iterator i = v0.begin(); i != v0.end();++i)
+	{
+	  * i = std::rand() % 51;
+	}
+
+	std::vector<unsigned int>::iterator newEnd = std::remove_if (v0.begin(), v0.end(), isOdd);
+
+	v0.erase(newEnd, v0.end());
+
+	//std::copy(std::begin(v0),std::end(v0), std::ostream_iterator<unsigned int>(std::cout,"\n"));
+
+	if(std::all_of(v0.begin(), v0.end(), isEven))
+	std::cout << "All even" << std::endl;
+	
+	REQUIRE(std::all_of(v0.begin(),v0.end(),isEven));
+	
+	
+}
 
 int main(int argc, char* argv[])
 {
