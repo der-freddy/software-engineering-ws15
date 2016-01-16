@@ -1,3 +1,4 @@
+#define CATCH_CONFIG_RUNNER
 //test
 #include "catch.hpp"
 
@@ -36,30 +37,39 @@
 //secure it is a singleton
 ConverterFactory* ConverterFactory::s_instance = nullptr;
 
+TEST_CASE("Euro To Pound","[Test1]")
+{
+	auto factory = ConverterFactory::instance();
 
-TEST_CASE("Converter Test")
-{	
-	std::vector <unsigned int> v0 (50); /*Creates vector with space for
-	100 Integers*/
-	
-	for ( std::vector <unsigned int >::iterator i = v0.begin(); i != v0.end();++i)
-	{
-	  * i = std::rand() % 51;
-	}
+	factory->add_object_to_registry("EuroToBritishPound", std::make_shared<EuroToBritishPoundConverter>());
 
-	std::vector<unsigned int>::iterator newEnd = std::remove_if (v0.begin(), v0.end(), isOdd);
+	auto converter = std::make_shared<EuroToBritishPoundConverter>(std::make_shared<YenToEuroConverter>());
 
-	v0.erase(newEnd, v0.end());
+	double value = 5000.0;
 
-	//std::copy(std::begin(v0),std::end(v0), std::ostream_iterator<unsigned int>(std::cout,"\n"));
+	double result = converter->convert(value);
 
-	if(std::all_of(v0.begin(), v0.end(), isEven))
-	std::cout << "All even" << std::endl;
-	
-	REQUIRE(std::all_of(v0.begin(),v0.end(),isEven));
-	
-	
+	REQUIRE(Approx(result) == 27.3405);
 }
+
+TEST_CASE("Inversion","[Test2]")
+{
+	double result_2 = 30.5521;
+
+	auto factory = ConverterFactory::instance();
+
+	factory->add_object_to_registry("EuroToBritishPound", std::make_shared<EuroToBritishPoundConverter>());
+
+	auto converter_3 = std::make_shared<Inversion>(std::make_shared<EuroToBritishPoundConverter>());
+
+	double value_3 = result_2;
+
+	double result_3 = converter_3->convert(value_3);
+
+	REQUIRE(Approx(result_3) == 42);
+}
+
+
 
 int main(int argc, char* argv[])
 {
@@ -245,5 +255,7 @@ int main(int argc, char* argv[])
 		std::cout << break_string << case_string << usage_string << break_string << explanation_string << std::endl;
 	}
 
-	return 0;
+	
+	return Catch::Session().run(argc,argv);
+
 }

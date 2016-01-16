@@ -74,6 +74,7 @@ CMakeFiles/converter.dir/main.cpp.o: ../Inversion.hpp
 CMakeFiles/converter.dir/main.cpp.o: ../TempConverter.hpp
 CMakeFiles/converter.dir/main.cpp.o: ../UnitConverter.hpp
 CMakeFiles/converter.dir/main.cpp.o: ../YenToEuroConverter.hpp
+CMakeFiles/converter.dir/main.cpp.o: ../catch.hpp
 CMakeFiles/converter.dir/main.cpp.o: ../main.cpp
 CMakeFiles/converter.dir/main.cpp.o: ../tinytest.h
 
