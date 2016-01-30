@@ -2,6 +2,8 @@
 #define CONVERTER_FACTORY
 #include <iostream>
 
+#include "ConverterNotFound.hpp"
+
 //for pointer..ish things
 #include <memory>
 

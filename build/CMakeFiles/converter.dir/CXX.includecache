@@ -16,13 +16,11 @@ UnitConverter.hpp
 DollarToEuroConverter.hpp
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/DollarToEuroConverter.hpp
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/ConverterFactory.cpp
-ConverterFactory.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/ConverterFactory.hpp
-
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/ConverterFactory.hpp
 iostream
 -
+ConverterNotFound.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/ConverterNotFound.hpp
 memory
 -
 string
@@ -31,6 +29,12 @@ map
 -
 UnitConverter.hpp
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/UnitConverter.hpp
+
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/ConverterNotFound.hpp
+iostream
+-
+exception
+-
 
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
 UnitConverter.hpp
@@ -51,14 +55,18 @@ CurrencyConverter.hpp
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/FahrenheitToCelsiusConverter.hpp
 TempConverter.hpp
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/TempConverter.hpp
+ValueOutOfRange.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/ValueOutOfRange.hpp
 
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/GoldToEuroConverter.hpp
 CurrencyConverter.hpp
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/CurrencyConverter.hpp
 
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Inversion.cpp
-Inversion.hpp
-/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Inversion.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/InvalidInput.hpp
+iostream
+-
+exception
+-
 
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Inversion.hpp
 Decorator.hpp
@@ -74,6 +82,12 @@ iostream
 string
 -
 memory
+-
+
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/ValueOutOfRange.hpp
+iostream
+-
+exception
 -
 
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/YenToEuroConverter.hpp
@@ -111,6 +125,8 @@ Command.hpp
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/Command.hpp
 tinytest.h
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/tinytest.h
+InvalidInput.hpp
+/home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/InvalidInput.hpp
 
 /home/manuel/Medieninformatik/WS1516/SoftwareEngineering/3_Abgabe/software-engineering-ws15/tinytest.h
 stdlib.h

@@ -24,10 +24,23 @@ double FahrenheitToCelsiusConverter::convert(double input)
 		input = _decConv->convert(input);
 	}
 
-	//do the remaining, second conversion
-	double result = (5.0/9.0) * (input-32);
+	try
+	{
+		if(input < -459.67) //equivalent to -273,15 C° which is absolute zero
+		{
+			throw ValueOutOfRange();
+		}
 
-	return (double)((int) (result*10))/10;
+		//do the remaining, second conversion
+		double result = (5.0/9.0) * (input-32);
+
+		return (double)((int) (result*10))/10;
+	}
+	catch(ValueOutOfRange exception)
+	{
+		std::cout << exception.what() << std::endl;
+		return 0.0;
+	}
 }
 
 std::string FahrenheitToCelsiusConverter::toString() const

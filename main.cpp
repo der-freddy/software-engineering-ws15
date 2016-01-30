@@ -26,6 +26,9 @@
 //testing
 #include "tinytest.h"
 
+//exception
+#include "InvalidInput.hpp"
+
 /*
 	Remaining of exercise 4
 */
@@ -65,78 +68,9 @@ int main(int argc, char* argv[])
 	try
 	{
 		
-
 		/*
-			Part 1.1 Structural Patterns
-		*/
-		std::cout 	<< std::endl << std::endl
-					<< "Part 1.1 Structural Patterns";
-		
-		/*
-			Testing converter chaining
-		*/
-		std::cout 	<< std::endl << std::endl
-					<< "Converter chaining"
-					<< std::endl << std::endl;
-
-		//Converting from Yen to Euro to Britsh Pound
-		auto converter_1 = std::make_shared<EuroToBritishPoundConverter>(std::make_shared<YenToEuroConverter>());
-
-		double value_1 = 5000.0;
-
-		double result_1 = converter_1->convert(value_1);
-
-		std::cout 	<< "Converting from Yen to Euro to Britsh Pound"
-					<< std::endl
-					<< "Value: " << value_1
-					<< std::endl
-					<< converter_1->toString()
-					<< std::endl
-					<< "Result: " << result_1
-					<< std::endl;
-
-		/*
-			Testing the inversion Decorator
-		*/
-
-		std::cout 	<< std::endl << std::endl
-					<< "Inversion Decorator"
-					<< std::endl << std::endl;
-
-		//Converting from Euro to British Pound
-		auto converter_2 = std::make_shared<EuroToBritishPoundConverter>();
-
-		double value_2 = 42.0;
-
-		double result_2 = converter_2->convert(value_2);
-
-		std::cout 	<< "Converting from Euro to British Pound"
-					<< std::endl
-					<< "Value: " << value_2
-					<< std::endl
-					<< converter_2->toString()
-					<< std::endl
-					<< "Result: " << result_2
-					<< std::endl;
-
-		//Converting from British Pound to Euro via Inversion
-		auto converter_3 = std::make_shared<Inversion>(std::make_shared<EuroToBritishPoundConverter>());
-
-		double value_3 = result_2;
-
-		double result_3 = converter_3->convert(value_3);
-
-		std::cout 	<< "Converting from British Pound to Euro via Inversion"
-					<< std::endl
-					<< "Value: " << value_3
-					<< std::endl
-					<< converter_3->toString()
-					<< std::endl
-					<< "Result: " << result_3
-					<< std::endl;
-
-		/*
-			Part 2 Behavioural Patterns
+			Remaining of exercise 5
+			used for exception testing
 		*/
 		std::cout 	<< std::endl << std::endl
 					<< "Part 2 Behavioural Patterns"
@@ -157,8 +91,15 @@ int main(int argc, char* argv[])
 		//adapted with some conversion
 		for(std::string line; std::getline(std::cin, input, ' ');)
 		{
+			try
+			{
 			std::string inputString;
 			std::getline(std::cin,inputString);
+
+			//if(inputString)	//test of valid input
+			//{
+			//	throw InvalidInput();
+			//}
 
 			//wanted converter
 			auto convert = factory->create(input);
@@ -168,8 +109,16 @@ int main(int argc, char* argv[])
 			//reference to the method
 			convertMethod = &UnitConverter::convert;
 
-			//add the reference to the deque
-			command_list.push_back(Command{convert, convertMethod, std::stod(inputString)});
+			if(convert != nullptr) //added due to exception handling
+			{
+				//add the reference to the deque
+				command_list.push_back(Command{convert, convertMethod, std::stod(inputString)});
+			}
+			}
+			catch(std::exception e)
+			{
+				std::cout << "TEST: " << e.what() << std::endl;
+			}
 		}
 
 		//loop though the deque
@@ -216,5 +165,6 @@ int main(int argc, char* argv[])
 		std::cout << break_string << case_string << usage_string << break_string << explanation_string << std::endl;
 	}
 
+	
 	return 0;
 }

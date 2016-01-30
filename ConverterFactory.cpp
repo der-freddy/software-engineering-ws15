@@ -56,7 +56,8 @@ bool ConverterFactory::add_object_to_registry(std::string name, std::shared_ptr<
 /*
 	checks whether the name is already in the registry
 	returns true if it is already registered
-	returns false if there is no entry
+	EDIT:
+	throws an exception if ther is no entry
 */
 
 bool ConverterFactory::check_registry(std::string const & name) const
@@ -78,14 +79,22 @@ bool ConverterFactory::check_registry(std::string const & name) const
 
 std::shared_ptr<UnitConverter> ConverterFactory::create(std::string const& name)
 {
-
-	//loops through the registry
-	for(auto const & element : object_registry)
+	try
 	{
-		if(element.first == name)
+		//loops through the registry
+		for(auto const & element : object_registry)
 		{
-			return element.second->clone();
+			if(element.first == name)
+			{
+				return element.second->clone();
+			}
 		}
+		throw ConverterNotFound();
+	}
+	catch(ConverterNotFound exception) //doesn't work with std::exception exception because it always prints std::exception and not the .what() of the derived classes
+	{
+		std::cout << exception.what() << std::endl;
+		return nullptr;	//neccessary
 	}
 }
 

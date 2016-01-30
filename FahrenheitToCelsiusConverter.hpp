@@ -2,6 +2,8 @@
 #define FtoC
 #include "TempConverter.hpp"
 
+#include "ValueOutOfRange.hpp"
+
 class FahrenheitToCelsiusConverter : public TempConverter
 {
 	public:
