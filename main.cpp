@@ -38,7 +38,6 @@ int main(int argc, char* argv[])
 	/*
 		Adding objects to registry for Part 2
 		Mask:
-		//
 		factory->add_object_to_registry("",std::make_shared<>(Converter));
 	*/
 
